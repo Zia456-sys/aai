@@ -32,7 +32,7 @@ def countdown(t):
     while True:
         if (until - datetime.datetime.now()).total_seconds() > 0:
             stdout.flush()
-            stdout.write("\r "+Fore.RED+"[*]"+Fore.WHITE+"Sedang Attack =>" + str((until - datetime.datetime.now()).total_seconds()) + "detik lagi       \n")
+            stdout.write("\r "+Fore.RED+"[*]"+Fore.WHITE+"Sedang Attack =>" + str((until - datetime.datetime.now()).total_seconds()) + "   detik lagi    ")
         else:
             stdout.flush()
             stdout.write("\r "+Fore.RED+"[*]"+Fore.LIGHTGREEN_EX+"    Attack Selesai !       \n")
