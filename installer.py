@@ -3,7 +3,7 @@ print ("""
 
 
 
-SC MODIFIKASI OLEH UNKNOWN
+SC MODIFIKASI OLEH anu.... sih ... unknown sih
 JANGAN SEMBARANGAN>>>>> MINTA IJIN DULU YA
 
 
@@ -41,6 +41,7 @@ if c == "1":
     os.system ("pip install undetected_chromedriver")
     os.system ("pip install ipaddress")
     os.system ("pip install webhooks")
+    os.system ("pip install pyuseragents")
     os.system ("pip install netlib")
     os.system ("pip install pyproject.toml")
     os.system ("pip install dnspython")
@@ -84,6 +85,7 @@ elif c == "2":
     os.system ("pip install pyroxy")
     os.system ("pip install pysocks")
     os.system ("pip install pyqt5")
+    os.system ("pip install pyuseragents")
     os.system ("pip install httpx")
     os.system ("pip install cloudscraper")
     os.system ("pip install times")
