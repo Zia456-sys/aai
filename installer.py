@@ -3,7 +3,8 @@ print ("""
 
 
 
-ini hanya persiapan supaya enak jalanin script
+SC MODIFIKASI OLEH UNKNOWN
+JANGAN SEMBARANGAN>>>>> MINTA IJIN DULU YA
 
 
 
