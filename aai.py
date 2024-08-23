@@ -1467,7 +1467,7 @@ SUCCES✅""")
 
 def login():
     os.system("clear")
-    user = ""
+    user = "tolol"
     passwd = ""
     username = input("""
 
