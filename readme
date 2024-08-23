@@ -1,7 +1,7 @@
-echo "# aai" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Zia456-sys/aai.git
-git push -u origin main
+penting
+
+sebelum running script mohon running installer.py terlebih dahulu.
+terimakasih
+
+
+code moded by : UNKNOWN
