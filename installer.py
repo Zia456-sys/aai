@@ -55,7 +55,8 @@ if c == "1":
     os.system ("chmod +777 run")
     
 elif c == "2":
-    
+    os.system ("sudo apt full-upgrade -y")
+    os.system ("sudo apt install -y kali-linux-default")
     os.system ("sudo apt install wget -y")
     os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
     os.system ("wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz")
