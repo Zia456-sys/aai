@@ -1,7 +1,7 @@
 import operator
 import socket
 import os
-import requests
+
 import random
 import getpass
 import time
