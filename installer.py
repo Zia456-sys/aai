@@ -15,6 +15,7 @@ print ("""pakai mana masbro?\n \033[39m[1] Termux\033[39m\n \033[38m[2] nethunte
 c = input(">>>: ")
 if c == "1":
     os.system ("pkg install x11-repo -y")
+    os.syatem ("pkg update && pkg upgrade -y")
     os.system ("pkg install python3 -y")
     os.system ("pkg upgrade python3 -y")
     os.system ("pkg install pip -y")
@@ -55,8 +56,9 @@ if c == "1":
     os.system ("chmod +777 run")
     
 elif c == "2":
-    os.system ("sudo apt full-upgrade -y")
+    os.system ("sudo apt update && sudo apt full-upgrade -y")
     os.system ("sudo apt install -y kali-linux-default")
+    os.system ("sudo rm -fr /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
     os.system ("sudo apt install wget -y")
     os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
     os.system ("wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz")
@@ -96,8 +98,7 @@ elif c == "2":
     os.system ("pip install ipaddress")
     os.system ("pip install scapy")
     os.system ("pip install --upgrade pip")
-    os.system ("sudo apt install webhooks")
-    os.system ("sudo rm -fr /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
+    os.system ("pip install webhooks")
     os.system ("sudo apt update && sudo apt full-upgrade -y")
     os.system ("sudo apt dist-upgrade -y")
     os.system ("sudo apt autoremove")
