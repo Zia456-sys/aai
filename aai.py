@@ -1,4 +1,4 @@
-from operator import index
+import operator
 import socket
 import os
 import requests
@@ -16,6 +16,7 @@ import httpx
 import os, threading, requests, cloudscraper, datetime, time, socket, ssl, random, socket
 import undetected_chromedriver as webdriver
 
+from operator import index
 from colorama import Fore, Back
 from requests import post
 from os import system, name
@@ -1194,16 +1195,16 @@ def title():
     stdout.write("                                                                                    \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"        ══╦═══════════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"╔═════════╩═══════════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"DDoS Tool ======>>>>>>The Tools Modified By UNKNOWN "+Fore.LIGHTGREEN_EX  +" ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"GUNAKAN HANYA UNTUK MENARGETKAN ZIONIS !!!!         "+Fore.LIGHTGREEN_EX  +" ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"Tele @ashabulaqlamindonesia                         "+Fore.LIGHTGREEN_EX  +" ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"Ketik [help atau ?] buat lihat command nya          "+Fore.LIGHTGREEN_EX  +" ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"DDoS Tool ======>>>>>>The Tools Modified By UNKNOWN "+Fore.LIGHTGREEN_EX  +"  ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"GUNAKAN HANYA UNTUK MENARGETKAN ZIONIS !!!!         "+Fore.LIGHTGREEN_EX  +"  ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"Tele @ashabulaqlamindonesia                         "+Fore.LIGHTGREEN_EX  +"  ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"Ketik [help atau ?] buat lihat command nya          "+Fore.LIGHTGREEN_EX  +"  ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"╚═══════════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
 ##############################################################################################
 def command():
-    stdout.write(Fore.LIGHTGREEN_EX+"╔══O"+Fore.LIGHTGREEN_EX+"[""~ADMIN~"+Fore.LIGHTGREEN_EX+" @"+Fore.LIGHTGREEN_EX+" AAI-DDOS"+Fore.CYAN+"]"+Fore.LIGHTGREEN_EX+"\n╚═>\x1b[38;2;0;255;189m> "+Fore.WHITE)
+    stdout.write(Fore.LIGHTGREEN_EX+"╔══O00000000000000"+Fore.LIGHTGREEN_EX+"["" ~ADMIN~ "+Fore.LIGHTGREEN_EX+" @"+Fore.LIGHTGREEN_EX+" AAI-TEAM "+Fore.CYAN+"]"+Fore.LIGHTGREEN_EX+"\n╚═>>>\x1b[38;2;0;255;189m> "+Fore.WHITE)
     command = input()
     if command == "cls" or command == "clear":
         clear()
@@ -1446,29 +1447,10 @@ def func():
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"exit       "+Fore.RED+": "+Fore.WHITE+"Bye..\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"credit     "+Fore.RED+": "+Fore.WHITE+"Thanks for\n")
 
-def ascii_vro():
-    clear()
-    print(f'''
-HALLO..... WELCOME MUJAHID''')
-    time.sleep(2.6)
-    clear()
-    print(f'''
-MOHON TUNGGU SEBENTAR YA...''')
-    time.sleep(2.6)
-    clear()
-    print(f'''
-LAGI LOADING⏳''')
-    time.sleep(2.6)
-    clear()
-    print(f"""
-SUCCES✅""")
-    time.sleep(2.8)
-    clear()
-
 
 def login():
     os.system("clear")
-    user = "tolol"
+    user = "m"
     passwd = ""
     username = input("""
 
