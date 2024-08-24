@@ -1045,7 +1045,7 @@ def help():
     stdout.write("                                                                                           \n")
     stdout.write("    "+Fore.LIGHTWHITE_EX  +"           ██╗  ██╗███████╗██╗     ██████╗             \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"           ██║  ██║██╔════╝██║     ██╔══██╗            \n")
-    stdout.write(     "+Fore.LIGHTGREEN_EX  +"           ███████║█████╗  ██║     ██████╔╝            \n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"           ███████║█████╗  ██║     ██████╔╝            \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"           ██╔══██║██╔══╝  ██║     ██╔═══╝             \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"           ██║  ██║███████╗███████╗██║                 \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"           ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝                 \n")
