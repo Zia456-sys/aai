@@ -1192,7 +1192,7 @@ def layer7_2():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ════╦════════════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"COMMAND"+Fore.LIGHTGREEN_EX+"    "+Fore.LIGHTWHITE_EX+"                     LIST                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       COMMAND"+Fore.LIGHTGREEN_EX+""+Fore.LIGHTWHITE_EX+"LIST                                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"tlz        "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl=z untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"https2     "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl=z untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1500,7 +1500,7 @@ def command():
             print('cek lagi')
             print('isi semua pertanyaan dengan benar')
 
-    elif command == "HTTPS2" or comman == "https2" :
+    elif command == "HTTPS2" or command == "https2" :
         try:
             target, thread, t = get_info_l7()
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
