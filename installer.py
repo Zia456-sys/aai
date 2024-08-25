@@ -50,6 +50,7 @@ if c == "1":
     os.system ("pip install mechanize")
     os.system ("pip install ipaddress")
     os.system ("pip install --upgrade pip")
+    os.system ("apt-get --fix-broken install")
     os.system ("apt-get update && apt-get full-upgrade -y")
     os.system ("apt-get dist-upgrade -y")
     os.system ("apt-get autoremove")
@@ -99,6 +100,7 @@ elif c == "2":
     os.system ("pip install scapy")
     os.system ("pip install --upgrade pip")
     os.system ("pip install webhooks")
+    os.system ("sudo apt --fix-broken install)
     os.system ("sudo apt update && sudo apt full-upgrade -y")
     os.system ("sudo apt dist-upgrade -y")
     os.system ("sudo apt autoremove")
@@ -107,7 +109,7 @@ elif c == "2":
 if os.name == "nt":
     pass
     
-else:
+#else:
     os.system("wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
     os.system("apt-get install ./google-chrome-stable_current_amd64.deb")
     
