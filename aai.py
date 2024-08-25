@@ -280,13 +280,13 @@ def get_info_l7():
 def get_info_l72():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"URL      "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     target = input()
-    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHOD   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
-    methode = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"THREAD   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     thread = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHODE  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    methode = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     t = input()
-    return target, methode, thread, t
+    return target, thread, methode, t
 
 def get_info_l4():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"IP       "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
@@ -1457,12 +1457,12 @@ def command():
         timer.join()
         
     elif command == "tlz" or command == "TLZ":
-        target, thread, t = get_info_l72()
+        target, thread, methode, t = get_info_l72()
         timelol = time.time() + int(timer)
         while time.time() < timelol:
             try :
                 os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
-                threading.Thread(target, args=(target, t, thread)).start()
+                threading.Thread(target, args=(target, thread, methode, t)).start()
                 timer = threading.Thread(target=countdown, args=(t,))
                 timer.start()
                 timer.join()
