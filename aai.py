@@ -13,7 +13,7 @@ import urllib
 import getpass
 import os,sys,json
 import httpx
-import os, threading, requests, cloudscraper, datetime, time, socket, ssl, random, socket
+import os, threading, cloudscraper, datetime, time, socket, ssl, random, socket
 import undetected_chromedriver as webdriver
 
 from operator import index
@@ -36,11 +36,11 @@ def countdown(t):
             stdout.write("\r "+Fore.RED+"[*]"+Fore.WHITE+"Sedang Attack =>" + str((until - datetime.datetime.now()).total_seconds()) + "   detik lagi    ")
         else:
             stdout.flush()
-            stdout.write("\r "+Fore.RED+"[*]"+Fore.LIGHTGREEN_EX+"    Attack Selesai !       \n")
+            stdout.write("\r "+Fore.RED+"[*]"+Fore.LIGHTGREEN_EX+"   ~~~~~~~~~~~~  Attack Selesai !   ~~~~~~~~~~    \n")
             stdout.write("")
             return
 
-############## user-agent block #################
+######################################### user-agent block ###############################################
 useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1",
 			"Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1",
 			"Mozilla/5.0 (WindowsCE 6.0; rv:2.0.1) Gecko/20100101 Firefox/4.0.1",
