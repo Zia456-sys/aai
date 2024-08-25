@@ -1463,7 +1463,7 @@ def command():
         timer.start()
         timer.join()
     
-    elif command == "hulk2" or command == "HULK2" :
+    elif command == "hulk2" or command == "HULK2":
         try:
             target, thread, t = get_info_l7()
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
@@ -1472,6 +1472,9 @@ def command():
             #os.system(f'cd godzilla && go run XCDDOS.go -site {url} -data GET')
             #os.system(f'cd godzilla && go run Low.go -site {url} -data GET')
             #os.system("clear")
+         except IndexError:
+            print('Usage: HTTPS2 <url> <method>')
+            print('Example: HTTPS2 https://example.com GET')
 
 ##############################################################################################
 
