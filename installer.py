@@ -4,7 +4,7 @@ print ("""
 
 
 SC MODIFIKASI OLEH anu.... sih ... unknown sih
-JANGAN SEMBARANGAN>>>>> MINTA IJIN DULU YA
+JANGAN SEMBARANGAN >>>>> MINTA IJIN DULU YA
 
 
 
@@ -60,11 +60,11 @@ elif c == "2":
     #os.system ("sudo apt install -y kali-linux-default")
     os.system ("sudo rm -fr /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
     os.system ("sudo apt install wget -y")
-    os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
-    os.system ("wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz")
-    os.system ("tar -xvf Python-3.12.5.tgz")
-    os.system ("rm Python-3.12.5.tgz")
-    os.system ("cd Python-3.12.5 && sudo ./configure --enable-optimizations && sudo make install")
+    #os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
+    #os.system ("wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz")
+    #os.system ("tar -xvf Python-3.12.5.tgz")
+    #os.system ("rm Python-3.12.5.tgz")
+    #os.system ("cd Python-3.12.5 && sudo ./configure --enable-optimizations && sudo make install")
     os.system ("sudo apt upgrade python3 -y")
     os.system ("sudo dpkg --configure -a")
     os.system ("sudo apt install python-is-python3 -y")
