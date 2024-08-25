@@ -100,7 +100,7 @@ elif c == "2":
     os.system ("pip install scapy")
     os.system ("pip install --upgrade pip")
     os.system ("pip install webhooks")
-    os.system ("sudo apt --fix-broken install)
+    os.system ("sudo apt --fix-broken install")
     os.system ("sudo apt update && sudo apt full-upgrade -y")
     os.system ("sudo apt dist-upgrade -y")
     os.system ("sudo apt autoremove")
