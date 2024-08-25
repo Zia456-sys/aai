@@ -1472,7 +1472,7 @@ def command():
             #os.system(f'cd godzilla && go run XCDDOS.go -site {url} -data GET')
             #os.system(f'cd godzilla && go run Low.go -site {url} -data GET')
             #os.system("clear")
-         except IndexError:
+        except IndexError:
             print('Usage: HTTPS2 <url> <method>')
             print('Example: HTTPS2 https://example.com GET')
 
