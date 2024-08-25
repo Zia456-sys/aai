@@ -4,16 +4,19 @@ import socket
 import os
 import random
 import getpass
+import cloudscraper
+import datetime
 import time
 import sys
+import ssl
+import random
 import threading
 import codecs
 import string
 import urllib
 import getpass
-import os,sys,json
+import json
 import httpx
-import os, threading, cloudscraper, datetime, time, socket, ssl, random, socket
 import undetected_chromedriver as webdriver
 
 from operator import index
@@ -1031,7 +1034,7 @@ def LaunchSTELLAR(url, timer):
         except:
             s.close()
 
-######################################################## bagian mesin habis ###########################################################################
+######################################################### bagian mesin habis ###########################################################################
 
 def clear():
     if name == 'nt':
@@ -1092,20 +1095,20 @@ def credit():
 ##############################################################################################
 def layer7():
     clear()
-    stdout.write("                                                                                         \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   \n")
-    stdout.write("                                                                                    \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"    ██╗      █████╗ ██╗   ██╗███████╗██████╗ ███████╗          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗╚════██║          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝    ██╔╝          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗   ██╔╝           \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ███████╗██║  ██║   ██║   ███████╗██║  ██║   ██║            \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝            \n")
+    stdout.write("                                            \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
+    stdout.write("                                                                                  \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"    ██╗      █████╗ ██╗   ██╗███████╗██████╗ ███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝    ██╔╝ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗   ██╔╝  \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ███████╗██║  ██║   ██║   ███████╗██║  ██║   ██║   \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ════╦════════════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"spoof  "+Fore.LIGHTGREEN_EX+"   |"+Fore.LIGHTWHITE_EX+" STRONG Bypass with spoof Xforward        "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1134,20 +1137,20 @@ def layer7():
 ##############################################################################################
 def layer4():
     clear()
-    stdout.write("                                                                                    \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   \n")
-    stdout.write("                                                                                            \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"   ██╗      █████╗ ██╗   ██╗███████╗██████╗ ██╗  ██╗          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗██║  ██║          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝███████║          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════██║          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ███████╗██║  ██║   ██║   ███████╗██║  ██║     ██║          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝          \n")
+    stdout.write("                                                                                  \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
+    stdout.write("                                                                                  \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +"   ██╗      █████╗ ██╗   ██╗███████╗██████╗ ██╗  ██╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗██║  ██║ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝███████║ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ███████╗██║  ██║   ██║   ███████╗██║  ██║     ██║ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝ \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ══╦══════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═════════╩══════════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                             "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1161,21 +1164,21 @@ def layer4():
 ##############################################################################################
 def tools():
     clear()
-    stdout.write("                                                                                    \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   \n")
-    stdout.write("                                                                                    \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"          ████████╗ ██████╗  ██████╗ ██╗             \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX +"          ╚══██╔══╝██╔═══██╗██╔═══██╗██║             \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ██║   ██║██║   ██║██║             \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ██║   ██║██║   ██║██║             \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ╚██████╔╝╚██████╔╝███████╗             \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝             \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"          ══╦═══════════════════════════╦══        \n")
+    stdout.write("                                                                                 \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
+    stdout.write("                                                                      \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"          ████████╗ ██████╗  ██████╗ ██╗  \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX +"          ╚══██╔══╝██╔═══██╗██╔═══██╗██║  \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ██║   ██║██║   ██║██║  \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ██║   ██║██║   ██║██║  \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ██║   ╚██████╔╝╚██████╔╝███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"             ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"          ══╦═══════════════════════════╦══   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╔═════════╩═══════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Geo IP Address Lookup"+Fore.LIGHTGREEN_EX+"               ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"dns   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Classic DNS Lookup"+Fore.LIGHTGREEN_EX+"                  ║\n")
@@ -1185,14 +1188,14 @@ def tools():
 
 ##############################################################################################
 def title():
-    stdout.write("                                                                                    \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX   +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX   +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX   +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX   +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX   +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║   \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX   +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝   \n")
-    stdout.write("                                                                                    \n")
+    stdout.write("                                                                                   \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX   +" █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX   +"██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX   +"███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX   +"██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX   +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX   +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
+    stdout.write("                                                                                   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"        ══╦═══════════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"╔═════════╩═══════════════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"║ "+Fore.LIGHTWHITE_EX +"DDoS Tool ======>>>>>>The Tools Modified By UNKNOWN "+Fore.LIGHTGREEN_EX  +"  ║\n")
@@ -1450,7 +1453,7 @@ def func():
 
 def login():
     os.system("clear")
-    user = "m"
+    user = ""
     passwd = ""
     username = input("""
 
