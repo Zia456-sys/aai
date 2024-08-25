@@ -1463,7 +1463,7 @@ def command():
         timer.start()
         timer.join()
     
-    elif command == "hulk2" or command "HULK2"
+    elif command == "hulk2" or command =="HULK2"
         try:
             target, thread, t = get_info_l7()
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
