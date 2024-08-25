@@ -853,7 +853,7 @@ def Launchhttp2(url, timer):
 
 #spoof
 def spoofer():
-    addr = [192. 168. 0. 1]
+    addr = [192, 168, 0, 1]
     d = '.'
     addr[0] = str(random.randrange(11, 197))
     addr[1] = str(random.randrange(0, 255))
