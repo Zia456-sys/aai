@@ -57,7 +57,7 @@ if c == "1":
     
 elif c == "2":
     os.system ("sudo apt update && sudo apt full-upgrade -y")
-    os.system ("sudo apt install -y kali-linux-default")
+    #os.system ("sudo apt install -y kali-linux-default")
     os.system ("sudo rm -fr /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
     os.system ("sudo apt install wget -y")
     os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
