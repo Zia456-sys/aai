@@ -1,10 +1,13 @@
 import os
+clear ()
 print ("""
 
 
 
-SC MODIFIKASI OLEH anu.... sih ... unknown sih
+        SC MODIFIKASI OLEH unknown
 JANGAN SEMBARANGAN >>>>> MINTA IJIN DULU YA
+ HARGAI ORANG YANG SUDAH CAPEK BIKIN YA...
+
 
 
 
