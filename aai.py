@@ -45,30 +45,30 @@ def countdown(t):
 
 def picture():
 
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"                .  ....                  .,               \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"            .',,,,,,,;;;.              'dOo              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"            .',,'.   ',,.             oKkOd              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .''. .                 'KOx0.              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              ...,cddo;'            .O0d0l              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"               .:clol0Kxkc          d0dOd              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .,;;;;cloocol.       cKdkO              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              ';:c;;clodldd.      .Kxx0.              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"             .;:cd,;,::c,:;.      Okd0'              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"              .',:,,,::o.;c.     dOoOo              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"           ...'''',;;clo,l      ;Kokk              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"        .';:;;;clcl.,'',,'lOx.'              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"         .',;,;c:c;coxdcoc:;:,'              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"        ...',;::;;coOOOkOOkl.'.              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"       ......':;;,.    .::cc,              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"      .,'   .,:lx.      .;cc:              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"           .,cdo.       .,ld.              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"          .,clx          'cd:              \n")
-        stdout.write(" "+Fore.LIGHTGREEN_EX   +"         'clxx,          .':coc,.              \n")
+        stdout.write(" "+Fore.RED     +"                .  ....                  .,               \n")
+        stdout.write(" "+Fore.RED     +"            .',,,,,,,;;;.              'dOo              \n")
+        stdout.write(" "+Fore.RED     +"            .',,'.   ',,.             oKkOd              \n")
+        stdout.write(" "+Fore.RED     +"              .''. .                 'KOx0.              \n")
+        stdout.write(" "+Fore.RED     +"              ...,cddo;'            .O0d0l              \n")
+        stdout.write(" "+Fore.RED     +"               .:clol0Kxkc          d0dOd              \n")
+        stdout.write(" "+Fore.RED     +"              .,;;;;cloocol.       cKdkO              \n")
+        stdout.write(" "+Fore.RED     +"              ';:c;;clodldd.      .Kxx0.              \n")
+        stdout.write(" "+Fore.RED     +"             .;:cd,;,::c,:;.      Okd0'              \n")
+        stdout.write(" "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo              \n")
+        stdout.write(" "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk              \n")
+        stdout.write(" "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
+        stdout.write(" "+Fore.WHITE   +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
+        stdout.write(" "+Fore.WHITE   +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
+        stdout.write(" "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
+        stdout.write(" "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
+        stdout.write(" "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'              \n")
+        stdout.write(" "+Fore.WHITE   +"         .',;,;c:c;coxdcoc:;:,'              \n")
+        stdout.write(" "+Fore.WHITE   +"        ...',;::;;coOOOkOOkl.'.              \n")
+        stdout.write(" "+Fore.WHITE   +"       ......':;;,.    .::cc,              \n")
+        stdout.write(" "+Fore.WHITE   +"      .,'   .,:lx.      .;cc:              \n")
+        stdout.write(" "+Fore.WHITE   +"           .,cdo.       .,ld.              \n")
+        stdout.write(" "+Fore.WHITE   +"          .,clx          'cd:              \n")
+        stdout.write(" "+Fore.WHITE   +"         'clxx,          .':coc,.              \n")
 
 
 ######################################### user-agent block ###############################################
@@ -1680,23 +1680,51 @@ def login():
     elif username == user and password == passwd:
         print("""
         اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ""")
-        time.sleep(0.6)
-        clear()
+        time.sleep(0.2)
+        #clear()
         print("""
         MOHON TUNGGU SEBENTAR YA...""")
-        time.sleep(0.6)
-        clear()
+        time.sleep(0.3)
+        #clear()
         print("""
-        MASIH LOADING.... SABAR YAA...""")
+        #MASIH LOADING.... SABAR YAA...""")
         clear()
-        time.sleep(0.6)
+        time.sleep(0.3)
         print("""
         بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ""")
-        time.sleep(2.6)
-        clear()
+        time.sleep(0.9)
+        #clear()
         print("""
-    ⚡ \33[0;32mWELLCOME TO AAI DDOS""")
-        time.sleep(2.6)
+        ⚡ \33[0;32mWELLCOME TO AAI DDOS
+        
+        
+                        .  ....                  .,
+                    .',,,,,,,;;;.              'dOo
+                    .',,'.   ',,.             oKkOd
+                      .''. .                 'KOx0.
+                      ...,cddo;'            .O0d0l
+                       .:clol0Kxkc          d0dOd
+                      .,;;;;cloocol.       cKdkO
+                      ';:c;;clodldd.      .Kxx0.
+                     .;:cd,;,::c,:;.      Okd0'
+                      .',:,,,::o.;c.     dOoOo
+                   ...'''',;;clo,l      ;Kokk
+               .',;;:ccl:;:,;,'.'.  ...'lolO
+               .,;::cllllcl:c;:c:o.    .:,;;'
+               .',::cccloco,ckxkOd:    ,lo   ;
+               ...,;,;:llcl;:lkdxd,lc.;,,'
+               ..;:lcllcx:l,,;;oo,.'..c,o,
+                .';:;;;clcl.,'',,'lOx.'
+                 .',;,;c:c;coxdcoc:;:,'
+                ...',;::;;coOOOkOOkl.'.
+               ......':;;,.    .::cc,
+              .,'   .,:lx.      .;cc:
+                   .,cdo.       .,ld.
+                  .,clx          'cd:
+                 'clxx,          .':coc,.
+
+                 """)
+        time.sleep(1.5)
         clear()
         title()
         while True:
