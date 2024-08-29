@@ -18,7 +18,6 @@ import getpass
 import json
 import httpx
 import undetected_chromedriver as webdriver
-import cfscrape
 
 from operator import index
 from colorama import Fore, Back
@@ -1678,24 +1677,24 @@ def login():
         print("")
         print(f"""
        ☠️ \033[1;31;40mMINTA IJIN ADMIN AAI DULU DEKS""")
-        time.sleep(0.6)
+        time.sleep(5)
         sys.exit(1)
     elif username == user and password == passwd:
         print("""
         اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ""")
-        time.sleep(0.2)
+        time.sleep(0.5)
         #clear()
         print("""
         MOHON TUNGGU SEBENTAR YA...""")
-        time.sleep(0.3)
+        time.sleep(0.5)
         #clear()
         print("""
         #MASIH LOADING.... SABAR YAA...""")
         clear()
-        time.sleep(0.3)
+        time.sleep(0.5)
         print("""
         بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ""")
-        time.sleep(0.9)
+        time.sleep(1)
         #clear()
         print("""
         ⚡ \33[0;32mWELLCOME TO AAI DDOS
@@ -1727,7 +1726,7 @@ def login():
                  'clxx,          .':coc,.
 
                  """)
-        time.sleep(1.5)
+        time.sleep(2.5)
         clear()
         title()
         while True:
