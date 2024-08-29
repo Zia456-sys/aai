@@ -70,7 +70,7 @@ elif c == "2":
     #os.system ("rm Python-3.12.5.tgz")
     #os.system ("cd Python-3.12.5 && sudo ./configure --enable-optimizations && sudo make install")
     os.system ("sudo apt upgrade python3 -y")
-    os.system ("sudo dpkg --configure -a")
+    #os.system ("sudo dpkg --configure -a")
     os.system ("sudo apt install python-is-python3 -y")
     os.system ("sudo apt install pip -y")
     os.system ("sudo apt install default-jdk -y")
