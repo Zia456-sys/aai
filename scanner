@@ -1,4 +1,4 @@
-echo -n "\033[92m [-] IP Target : "
+echo -n "\033[92m [-] Masukin IP Target : "
 
 read a 
 if [ ! -z $a ]
@@ -6,5 +6,5 @@ then
 echo "[+] Loading.../"
 nmap -d --script=ssl-heartbleed --script-args=vulns.showall -sV $a 
 else 
-echo "\033[32m[!] Pelase Enter IP Target ! "
+echo "\033[32m[!] Masukin IP Target cuy ! yang bener"
 fi
