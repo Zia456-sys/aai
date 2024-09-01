@@ -1560,8 +1560,9 @@ def command():
             print('Error cuy pas lagi req ke API!!')
             
     elif command == "scan-ip" :
+        target = input()
         try :
-            os.system ("sh scanner")
+            os.system (f" nmap -d --script=ssl-heartbleed --script-args=vulns.showall -sV {target} ")
         except :
             print (" ada yang error cuy ... ")
             
