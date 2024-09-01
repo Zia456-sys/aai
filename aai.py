@@ -1560,6 +1560,7 @@ def command():
             print('Error cuy pas lagi req ke API!!')
             
     elif command == "scan-ip" :
+        stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"IP "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
         target = input()
         try :
             os.system (f" nmap -d --script=ssl-heartbleed --script-args=vulns.showall -sV {target} ")
