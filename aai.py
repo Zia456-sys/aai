@@ -1253,7 +1253,7 @@ def layer7_b():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-flood "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-rand  "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"rapid      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"ovh-beam   "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
