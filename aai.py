@@ -1560,7 +1560,7 @@ def command():
         except:
             print('Error cuy pas lagi req ke API!!')
             
-    elif command == "scan-ip"
+    elif command == "scan-ip" :
         try :
             os.system ("chmod +x scanner \n")
             os.system ("sh scanner \n")
@@ -1574,7 +1574,7 @@ def command():
             
             
             
-     else:
+    else:
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"Unknown command. type 'help' to see all commands.\n")  
 
     
