@@ -1561,8 +1561,7 @@ def command():
             
     elif command == "scan-ip" :
         try :
-            os.system ("chmod +x scanner \n")
-            os.system ("sh scanner \n")
+            os.system ("sh scanner")
         except :
             print (" ada yang error cuy ... ")
             
