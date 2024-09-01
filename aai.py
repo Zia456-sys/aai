@@ -1,6 +1,6 @@
 from os import system, name
 import os
-import operaor
+import operator
 import requests
 import socket
 import random
@@ -8,7 +8,6 @@ import getpass
 import cloudscraper
 import datetime
 import time
-import nodejs
 import sys
 import ssl
 import random
@@ -1307,10 +1306,10 @@ def tools():
     stdout.write(" "+Fore.LIGHTGREEN_EX +"             ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝ \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"          ══╦═══════════════════════════╦══   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╔═════════╩═══════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" pencari Geo IP       "+Fore.LIGHTGREEN_EX+"               ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"dns   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Classic DNS Lookup"+Fore.LIGHTGREEN_EX+"                  ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"subnet"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Subnet IP Address Lookup"+Fore.LIGHTGREEN_EX+"            ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"scan-ip"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Nyari bolongan          "+Fore.LIGHTGREEN_EX+"            ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" pencari Geo IP       "+Fore.LIGHTGREEN_EX+"              ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"dns    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Classic DNS Lookup"+Fore.LIGHTGREEN_EX+"                 ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"subnet "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Subnet IP Address Lookup"+Fore.LIGHTGREEN_EX+"           ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"scan-ip"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Nyari bolongan          "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╚═══════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
