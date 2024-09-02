@@ -1,11 +1,12 @@
 import os
-clear ()
+
+os.system ("clear")
 print ("""
 
 
 
-        SC MODIFIKASI OLEH unknown
-JANGAN SEMBARANGAN >>>>> MINTA IJIN DULU YA
+        SC MODIFIKASI OLEH "unknown"
+         >>>>> MINTA IJIN DULU YA
  HARGAI ORANG YANG SUDAH CAPEK BIKIN YA...
 
 
@@ -13,7 +14,7 @@ JANGAN SEMBARANGAN >>>>> MINTA IJIN DULU YA
 
 """)
 
-print ("""pakai mana masbro?\n \033[39m[1] Termux\033[39m\n \033[38m[2] nethunter\033[38m\n""")
+print ("""pakai mana masbro?\n \033[32m[1] Termux\033[32m\n \033[32m[2] nethunter\033[32m\n""")
 
 c = input(">>>: ")
 if c == "1":
@@ -113,6 +114,16 @@ elif c == "2":
     os.system ("sudo apt autoremove")
     os.system ("sudo chmod +777 run")
     
+elif c == "":
+    print ("""
+        LHO KOK GA JADI .....??
+        
+        LUPA APA SALAH?
+        
+        YASUDAH KALAU GA JADI, GA APA APA KOK
+        
+        """)
+        
 if os.name == "nt":
     pass
     
