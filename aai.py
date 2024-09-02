@@ -1651,7 +1651,7 @@ def login():
         time.sleep(1.6)
         clear()
         picture()
-        tim.sleep(0.8)
+        time.sleep(0.8)
         clear()
         title()
         while True:
