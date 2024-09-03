@@ -155,11 +155,12 @@ elif c == "":
         YASUDAH KALAU GA JADI, GA APA APA KOK
         
         """)
-        
+    exit()
+    
 if os.name == "nt":
     pass
     
-#else:
+else:
     os.system("wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
     os.system("apt-get install ./google-chrome-stable_current_amd64.deb")
     
