@@ -1383,7 +1383,7 @@ def command():
         picture()
         timer = threading.Thread(target=countdown, args=(t,))
         timer.start()
-        LaunchHulk(target, thread, t)
+        LaunchHULK(target, thread, t)
         timer.join()
     elif command == "pxhulk" or command == "PXHULK":
         target, thread, t = get_info_l7()
