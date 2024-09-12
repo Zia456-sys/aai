@@ -358,7 +358,7 @@ def get_info_l4b():
     target = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"PORT     "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     port = input()
-    stdout.write("\x1b[38;2;255;20;147m   "+Fore.WHITE+"OPTION   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+" 1=TCP-FLOOD 2=UDP-FLOOD 3=HTTP-FLOOD(AUTO SSL)"+Fore.LIGHTGREEN_EX)\n
+    stdout.write("\x1b[38;2;255;20;147m   "+Fore.WHITE+"OPTION   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+" 1=TCP-FLOOD 2=UDP-FLOOD 3=HTTP-FLOOD(AUTO SSL) \n"+Fore.LIGHTGREEN_EX)
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHODE  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     methode = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
