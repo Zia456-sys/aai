@@ -1,5 +1,5 @@
 /*
-Coded By ZOXX
+Coded By ????
 Date: 12/5/2024
 |------------------------------------------------|
 |  This tool is a server stress test tool,       |
@@ -117,7 +117,7 @@ func init() {
 func main() {
 	fmt.Println("|--------------------------------------|")
 	fmt.Println("|   Golang : Server Stress Test Tool   |")
-	fmt.Println("|          C0d3d By ZOXX           |")
+	fmt.Println("|          C0d3d By ????               |")
 	fmt.Println("|--------------------------------------|")
 	if len(os.Args) != 7 {
 		fmt.Printf("Usage: %s host port mode connections seconds timeout(second)\r\n", os.Args[0])
