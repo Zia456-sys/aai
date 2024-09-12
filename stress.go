@@ -120,7 +120,7 @@ func main() {
 	fmt.Println("|          SEDANG MENYERANG            |")
 	fmt.Println("|--------------------------------------|")
 	if len(os.Args) != 7 {
-		fmt.Printf("Usage: %s host port mode connections seconds timeout(second)\r\n", os.Args[0])
+	/*	fmt.Printf("Usage: %s host port mode connections seconds timeout(second)\r\n", os.Args[0]) */
 		fmt.Println("|--------------------------------------|")
 		fmt.Println("|             Mode List                |")
 		fmt.Println("|     [1] TCP-Connection flood         |")
