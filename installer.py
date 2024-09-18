@@ -19,7 +19,7 @@ print ("""pakai mana masbro?\n \033[32m[1] Termux\033[32m\n \033[32m[2] nethunte
 c = input(">>>: ")
 if c == "1":
     os.system ("pkg install x11-repo -y")
-    os.syatem ("pkg update && pkg upgrade -y")
+    os.system ("pkg update && pkg upgrade -y")
     os.system ("pkg install python3 -y")
     #os.system ("pkg upgrade python3 -y")
     os.system ("pkg install pip -y")
