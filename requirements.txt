@@ -13,3 +13,4 @@ thread
 golang
 pyroxy
 bs4
+npm
