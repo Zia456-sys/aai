@@ -28,12 +28,12 @@ if c == "1":
     os.system ("pkg install golang -y")
     os.system ("pkg install gem -y")
     os.system ("pkg install nmap -y")
-    os.system ("pkg install mailutils")
-    os.system ("pkg install nodejs")
-    os.system ("pkg install openssl")
-    os.system ("pkg install perl")
-    os.system ("pkg install curl")
-    os.system ("pkg install sql-injection")
+    os.system ("pkg install -y mailutils")
+    os.system ("pkg install -y nodejs")
+    os.system ("pkg install -y openssl")
+    os.system ("pkg install -y perl")
+    os.system ("pkg install -y curl")
+    os.system ("pkg install -y sql-injection")
     os.system ("pip install requests")
     os.system ("pip install thread")
     os.system ("pip install colorama")
@@ -86,7 +86,7 @@ if c == "1":
 elif c == "2":
     os.system ("sudo apt update && sudo apt full-upgrade -y")
     #os.system ("sudo apt install -y kali-linux-default")
-    os.system ("sudo rm -fr /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
+    os.system ("sudo rm -rf /var/lib/dpkg/info/postgresql* && sudo dpkg --configure -a")
     os.system ("sudo apt install wget -y")
     #os.system ("sudo apt install build-essential zlib1g-dev libncurses-devlib libgdbm-dev libnss3 libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev -y")
     #os.system ("wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz")
@@ -94,7 +94,7 @@ elif c == "2":
     #os.system ("rm Python-3.12.5.tgz")
     #os.system ("cd Python-3.12.5 && sudo ./configure --enable-optimizations && sudo make install")
     #os.system ("sudo apt upgrade python3 -y")
-    #os.system ("sudo dpkg --configure -a")
+    os.system ("sudo dpkg --configure -a")
     os.system ("sudo apt install python-is-python3 -y")
     os.system ("sudo apt install pip -y")
     os.system ("sudo apt install default-jdk -y")
@@ -108,6 +108,8 @@ elif c == "2":
     os.system ("sudo apt install perl -y")
     os.system ("sudo apt install curl -y")
     os.system ("sudo apt install -y sql-injection")
+    os.system ("sudo apt install -y figlet")
+    os.system ("sudo apt install -y toilet")
     os.system ("pip install requests")
     os.system ("pip install colorama")
     os.system ("pip install thread")
@@ -171,6 +173,8 @@ if os.name == "nt":
 else:
     os.system("wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb")
     os.system("apt-get install ./google-chrome-stable_current_amd64.deb")
+
+clear()
     
 print ("""
     SUDAH SELESAI KAKA
