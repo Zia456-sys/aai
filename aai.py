@@ -5,7 +5,7 @@ import requests
 import socket
 import random
 import getpass
-#import cloudscraper
+import cloudscraper
 import datetime
 import time
 import sys
@@ -18,7 +18,7 @@ import urllib
 import getpass
 import json
 import httpx
-#import undetected_chromedriver as webdriver
+import undetected_chromedriver as webdriver
 
 from operator import index
 from colorama import Fore, Back
