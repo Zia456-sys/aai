@@ -21,11 +21,10 @@ if c == "1":
     os.system ("pkg install x11-repo -y")
     os.system ("pkg update && pkg upgrade -y")
     os.system ("pkg install python3 -y")
+    os.system ("pkg install -y pypy3-venv")
     #os.system ("pkg upgrade python3 -y")
     os.system ("pkg install pip -y")
     os.system ("pkg install wget -y")
-    os.system ("pkg install openjdk-17 -y")
-    os.system ("pkg install golang -y")
     os.system ("pkg install gem -y")
     os.system ("pkg install nmap -y")
     os.system ("pkg install -y mailutils")
@@ -61,6 +60,8 @@ if c == "1":
     os.system ("pip install ipaddress")
     os.system ("pip install axios")
     os.system ("pip install path")
+    os.system ("pkg install openjdk-17 -y")
+    os.system ("pkg install golang -y")
     os.system ("pip install --upgrade pip")
     os.system ("apt-get --fix-broken install")
     os.system ("apt-get update && apt-get full-upgrade -y")
@@ -96,9 +97,9 @@ elif c == "2":
     #os.system ("sudo apt upgrade python3 -y")
     os.system ("sudo dpkg --configure -a")
     os.system ("sudo apt install python-is-python3 -y")
+    os.system ("sudo apt install -y pypy3-venv")
+    os.system ("sudo apt install -y pipx")
     os.system ("sudo apt install pip -y")
-    os.system ("sudo apt install default-jdk -y")
-    os.system ("sudo apt install golang -y")
     os.system ("sudo apt install gem -y")
     os.system ("sudo apt install nmap -y")
     os.system ("sudo apt install mailcap -y")
@@ -139,6 +140,9 @@ elif c == "2":
     os.system ("sudo apt --fix-broken install")
     os.system ("sudo apt update && sudo apt full-upgrade -y")
     os.system ("sudo apt dist-upgrade -y")
+    os.system ("sudo apt install default-jdk -y")
+    os.system ("sudo apt install golang -y")
+    os.system ("sudo apt install -y npm")
     os.system ("sudo apt autoremove")
     os.system ("sudo chmod +777 run")
     os.system ("npm install axios")
@@ -177,5 +181,16 @@ else:
 os.system ("clear")
     
 print ("""
+
+
+
+
+
     SUDAH SELESAI KAKA
+    
+    
+    
+    
+    
+    
     """)

@@ -5,7 +5,7 @@ import requests
 import socket
 import random
 import getpass
-import cloudscraper
+#import cloudscraper
 import datetime
 import time
 import sys
@@ -18,7 +18,7 @@ import urllib
 import getpass
 import json
 import httpx
-import undetected_chromedriver as webdriver
+#import undetected_chromedriver as webdriver
 
 from operator import index
 from colorama import Fore, Back
@@ -56,34 +56,34 @@ def countdown_a(t):
             return
 
 def picture():
-        stdout.write("           "+Fore.WHITE   +"        \n")
-        stdout.write("           "+Fore.WHITE   +"        \n")
-        stdout.write("           "+Fore.RED     +"                .  ....                  .,  \n")
-        stdout.write("           "+Fore.RED     +"            .',,,,,,,;;;.              'dOo \n")
-        stdout.write("           "+Fore.RED     +"            .',,'.   ',,.             oKkOd \n")
-        stdout.write("           "+Fore.RED     +"              .''. .                 'KOx0. \n")
-        stdout.write("           "+Fore.RED     +"              ...,cddo;'            .O0d0l \n")
-        stdout.write("           "+Fore.RED     +"               .:clol0Kxkc          d0dOd \n")
-        stdout.write("           "+Fore.RED     +"              .,;;;;cloocol.       cKdkO \n")
-        stdout.write("           "+Fore.RED     +"              ';:c;;clodldd.      .Kxx0. \n")
-        stdout.write("           "+Fore.RED     +"             .;:cd,;,::c,:;.      Okd0' \n")
-        stdout.write("           "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo \n")
-        stdout.write("           "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk \n")
-        stdout.write("           "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO \n")
-        stdout.write("           "+Fore.RED     +"      .,;::cllllcl:c;:c:o.    .:,;;' \n")
-        stdout.write("           "+Fore.RED     +"       .',::cccloco,ckxkOd:    ,lo   ;\n")
-        stdout.write("           "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,' \n")
-        stdout.write("           "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o, \n")
-        stdout.write("           "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'   \n")
-        stdout.write("           "+Fore.WHITE   +"         .',;,;c:c;coxdcoc:;:,'  \n")
-        stdout.write("           "+Fore.WHITE   +"        ...',;::;;coOOOkOOkl.'. \n")
-        stdout.write("           "+Fore.WHITE   +"       ......':;;,.    .::cc,   \n")
-        stdout.write("           "+Fore.WHITE   +"      .,'   .,:lx.      .;cc:   \n")
-        stdout.write("           "+Fore.WHITE   +"           .,cdo.       .,ld.   \n")
-        stdout.write("           "+Fore.WHITE   +"          .,clx          'cd:   \n")
-        stdout.write("           "+Fore.WHITE   +"         'clxx,          .':coc,. \n")
-        stdout.write("           "+Fore.WHITE   +"        \n")
-        stdout.write("           "+Fore.WHITE   +"        \n")
+        stdout.write("        "+Fore.WHITE   +"        \n")
+        stdout.write("        "+Fore.WHITE   +"        \n")
+        stdout.write("        "+Fore.RED     +"                .  ....                  .,  \n")
+        stdout.write("        "+Fore.RED     +"            .',,,,,,,;;;.              'dOo \n")
+        stdout.write("        "+Fore.RED     +"            .',,'.   ',,.             oKkOd \n")
+        stdout.write("        "+Fore.RED     +"              .''. .                 'KOx0. \n")
+        stdout.write("        "+Fore.RED     +"              ...,cddo;'            .O0d0l \n")
+        stdout.write("        "+Fore.RED     +"               .:clol0Kxkc          d0dOd \n")
+        stdout.write("        "+Fore.RED     +"              .,;;;;cloocol.       cKdkO \n")
+        stdout.write("        "+Fore.RED     +"              ';:c;;clodldd.      .Kxx0. \n")
+        stdout.write("        "+Fore.RED     +"             .;:cd,;,::c,:;.      Okd0' \n")
+        stdout.write("        "+Fore.RED     +"              .',:,,,::o.;c.     dOoOo \n")
+        stdout.write("        "+Fore.RED     +"           ...'''',;;clo,l      ;Kokk \n")
+        stdout.write("        "+Fore.RED     +"       .',;;:ccl:;:,;,'.'.  ...'lolO \n")
+        stdout.write("        "+Fore.RED     +"      .,;::cllllcl:c;:c:o.    .:,;;' \n")
+        stdout.write("        "+Fore.RED     +"       .',::cccloco,ckxkOd:    ,lo   ;\n")
+        stdout.write("        "+Fore.WHITE   +"       ...,;,;:llcl;:lkdxd,lc.;,,' \n")
+        stdout.write("        "+Fore.WHITE   +"       ..;:lcllcx:l,,;;oo,.'..c,o, \n")
+        stdout.write("        "+Fore.WHITE   +"        .';:;;;clcl.,'',,'lOx.'   \n")
+        stdout.write("        "+Fore.WHITE   +"         .',;,;c:c;coxdcoc:;:,'  \n")
+        stdout.write("        "+Fore.WHITE   +"        ...',;::;;coOOOkOOkl.'. \n")
+        stdout.write("        "+Fore.WHITE   +"       ......':;;,.    .::cc,   \n")
+        stdout.write("        "+Fore.WHITE   +"      .,'   .,:lx.      .;cc:   \n")
+        stdout.write("        "+Fore.WHITE   +"           .,cdo.       .,ld.   \n")
+        stdout.write("        "+Fore.WHITE   +"          .,clx          'cd:   \n")
+        stdout.write("        "+Fore.WHITE   +"         'clxx,          .':coc,. \n")
+        stdout.write("        "+Fore.WHITE   +"        \n")
+        stdout.write("        "+Fore.WHITE   +"        \n")
 
 
 ######################################### user-agent block ###############################################
@@ -1164,10 +1164,6 @@ def Attacksamp(url, until_datetime):
             print('udah bener belum ngisi nya')
 
 
-
-
-
-
 ######################################################### bagian mesin habis ###########################################################################
 
 def clear():
@@ -1589,7 +1585,6 @@ def command():
         timer.join() 
     elif command == "destroy":
         target, port, thread, t = get_info_l4()
-        picture()
         try:
             os.system(f'perl destroy.pl {target} {port} 65500 {t}')
         except IndexError:
@@ -1721,7 +1716,15 @@ def login():
         time.sleep(0.5)
         clear()
         print("""
-    ⚡ \33[0;32mWELLCOME TO AAI DDOS""")
+        
+        
+        
+    ⚡ \33[0;32mWELLCOME TO AAI DDOS
+    
+    
+    
+    
+         """)
         time.sleep(0.6)
         picture()
         time.sleep(2.6)
